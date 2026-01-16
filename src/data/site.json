@@ -10,6 +10,6 @@
   "mapsEmbedUrl": "https://www.google.com/maps?q=Billinghurst%201591%2C%20Recoleta%2C%20CABA&output=embed",
   "instagramUrl": "https://www.instagram.com/",
   "facebookUrl": "https://www.facebook.com/",
-  "heroImage": "https://images.unsplash.com/photo-1588776814546-1c1d1e0f0d3a?auto=format&fit=crop&w=1600&q=80",
+  "heroImage": "/img/maida.png",
   "ctaWhatsAppLabel": "Escribinos por WhatsApp"
 }

@@ -111,23 +111,15 @@ function App() {
             rel="noopener noreferrer"
             onClick={() => handleWhatsAppClick('header')}
           >
-            {site.ctaWhatsAppLabel}
+            💬 {site.ctaWhatsAppLabel}
           </a>
         </div>
       </header>
 
       <main className="pb-24">
-        <section className="relative overflow-hidden bg-light-gray">
-          <div className="absolute inset-0">
-            <img
-              src={site.heroImage}
-              alt="Consultorio odontológico premium"
-              className="h-full w-full object-cover opacity-20"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-transparent" />
-          </div>
-          <div className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 md:grid-cols-2 md:items-center md:py-28">
-      <div>
+        <section className="bg-light-gray">
+          <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 md:grid-cols-2 md:items-center md:py-28">
+            <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-mint-dark">
                 Recoleta · CABA
               </p>
@@ -146,7 +138,7 @@ function App() {
                   rel="noopener noreferrer"
                   onClick={() => handleWhatsAppClick('hero')}
                 >
-                  {site.ctaWhatsAppLabel}
+                  💬 {site.ctaWhatsAppLabel}
                 </a>
                 <a
                   className="btn-secondary"
@@ -159,15 +151,15 @@ function App() {
                 </a>
               </div>
               <p className="mt-3 text-xs text-slate-500">
-                Link de reserva externo (placeholder).
+                Link de reserva externo (Google Calendar).
               </p>
             </div>
             <div className="relative">
-              <div className="overflow-hidden rounded-3xl shadow-soft">
+              <div className="flex items-center justify-center overflow-hidden rounded-3xl bg-white p-6 shadow-soft">
                 <img
                   src={site.heroImage}
-                  alt="Atención odontológica cálida y profesional"
-                  className="h-80 w-full object-cover md:h-96"
+                  alt="Maida Smirlian Odontología"
+                  className="h-72 w-full object-contain md:h-96"
                 />
               </div>
               <div className="absolute -bottom-6 left-6 max-w-xs rounded-2xl bg-white p-4 shadow-soft">
@@ -190,7 +182,13 @@ function App() {
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {services.map((service) => (
               <div key={service.id} className="card">
-                <h3 className="text-lg font-semibold text-petrol">{service.title}</h3>
+                <img
+                  src={service.imageUrl}
+                  alt={service.title}
+                  className="h-40 w-full rounded-2xl object-cover"
+                  loading="lazy"
+                />
+                <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
                 <p className="mt-3 text-sm text-slate-600">{service.description}</p>
                 <a
                   className="btn-secondary mt-6"
@@ -199,9 +197,9 @@ function App() {
                   rel="noopener noreferrer"
                   onClick={() => handleWhatsAppClick(`servicio_${service.id}`)}
                 >
-                  {service.ctaLabel}
-        </a>
-      </div>
+                  💬 {service.ctaLabel}
+                </a>
+              </div>
             ))}
           </div>
         </section>
@@ -360,7 +358,7 @@ function App() {
                   </label>
                 </div>
                 <button className="btn-primary mt-6 w-full" type="submit">
-                  Enviar por WhatsApp
+                  💬 Enviar por WhatsApp
                 </button>
               </form>
 
@@ -395,7 +393,7 @@ function App() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Instagram
+                      📸 Instagram
                     </a>
                     <a
                       className="transition hover:text-petrol"
@@ -403,7 +401,7 @@ function App() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Facebook
+                      📘 Facebook
                     </a>
                   </div>
                 </div>
@@ -427,7 +425,7 @@ function App() {
               rel="noopener noreferrer"
               onClick={() => handleWhatsAppClick('footer')}
             >
-              {site.ctaWhatsAppLabel}
+              💬 {site.ctaWhatsAppLabel}
             </a>
             <div className="flex gap-4 text-sm text-slate-600">
               <a
@@ -436,7 +434,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Instagram
+                📸 Instagram
               </a>
               <a
                 className="transition hover:text-petrol"
@@ -444,7 +442,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                📘 Facebook
               </a>
             </div>
           </div>
@@ -469,7 +467,7 @@ function App() {
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-mint-dark text-white shadow-soft transition hover:scale-105"
         aria-label="Escribinos por WhatsApp"
       >
-        WA
+        💬
       </a>
     </div>
   )
