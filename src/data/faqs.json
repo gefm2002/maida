@@ -1,0 +1,42 @@
+[
+  {
+    "id": "faq-1",
+    "question": "¿Cuánto dura un tratamiento de ortodoncia?",
+    "answer": "Depende del caso. En general dura entre 12 y 24 meses, con controles cada 4 a 6 semanas."
+  },
+  {
+    "id": "faq-2",
+    "question": "¿La ortodoncia estética duele?",
+    "answer": "Las molestias iniciales son leves y temporales. Te acompañamos para que el proceso sea cómodo."
+  },
+  {
+    "id": "faq-3",
+    "question": "¿Cada cuánto debo hacer una limpieza dental?",
+    "answer": "Recomendamos una limpieza cada 6 meses, aunque puede variar según tu salud bucal."
+  },
+  {
+    "id": "faq-4",
+    "question": "¿Atienden a niños y adolescentes?",
+    "answer": "Sí. Trabajamos con un enfoque preventivo y educativo para que se sientan seguros y acompañados."
+  },
+  {
+    "id": "faq-5",
+    "question": "¿Qué pasa si tengo bruxismo?",
+    "answer": "Hacemos una evaluación integral y, si corresponde, indicamos placas de descanso a medida."
+  },
+  {
+    "id": "faq-6",
+    "question": "¿Necesito una consulta inicial?",
+    "answer": "Sí, es clave para revisar tu caso, escuchar tus objetivos y armar un plan personalizado."
+  },
+  {
+    "id": "faq-7",
+    "question": "¿Qué métodos de pago aceptan?",
+    "answer": "Te informamos las opciones disponibles al momento de reservar el turno."
+  },
+  {
+    "id": "faq-8",
+    "question": "¿Puedo combinar tratamientos?",
+    "answer": "Claro. Muchas veces combinamos ortodoncia con controles preventivos para mejores resultados."
+  }
+]

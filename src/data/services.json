@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ortodoncia",
+    "title": "Ortodoncia convencional y estética",
+    "description": "Diagnóstico personalizado, planificación digital y seguimiento cercano para alinear tu sonrisa con comodidad.",
+    "ctaLabel": "Consultar por ortodoncia",
+    "whatsappMessage": "Hola, quiero consultar por ortodoncia (convencional o estética)."
+  },
+  {
+    "id": "limpieza",
+    "title": "Limpieza dental profesional",
+    "description": "Profilaxis completa para cuidar encías, eliminar manchas y mantener una salud bucal estable.",
+    "ctaLabel": "Quiero una limpieza",
+    "whatsappMessage": "Hola, quiero reservar una limpieza dental."
+  },
+  {
+    "id": "bruxismo",
+    "title": "Bruxismo y placas de descanso",
+    "description": "Evaluación integral para aliviar tensiones, proteger tus dientes y mejorar el descanso.",
+    "ctaLabel": "Consultar por bruxismo",
+    "whatsappMessage": "Hola, necesito consultar por bruxismo y placas de descanso."
+  },
+  {
+    "id": "general",
+    "title": "Odontología general",
+    "description": "Controles, tratamientos preventivos y restauraciones con enfoque conservador y seguro.",
+    "ctaLabel": "Agendar control",
+    "whatsappMessage": "Hola, quiero agendar un control de odontología general."
+  },
+  {
+    "id": "pediatria",
+    "title": "Atención a niños y adolescentes",
+    "description": "Acompañamiento amable y educativo para crear hábitos saludables desde temprano.",
+    "ctaLabel": "Consultar por atención infantil",
+    "whatsappMessage": "Hola, quiero consultar por atención para niños/adolescentes."
+  }
+]

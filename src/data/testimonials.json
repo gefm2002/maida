@@ -1,0 +1,32 @@
+[
+  {
+    "id": "testimonio-1",
+    "name": "Lucía F.",
+    "neighborhood": "Recoleta",
+    "text": "Me explicaron todo con paciencia y vi cambios reales en pocas semanas. La atención es impecable."
+  },
+  {
+    "id": "testimonio-2",
+    "name": "Marcos R.",
+    "neighborhood": "Palermo",
+    "text": "El seguimiento fue súper cercano y me sentí acompañado en cada control. Recomiendo al 100%."
+  },
+  {
+    "id": "testimonio-3",
+    "name": "Sofía L.",
+    "neighborhood": "Belgrano",
+    "text": "Mi ortodoncia estética quedó perfecta. Cero dolores y un trato muy humano."
+  },
+  {
+    "id": "testimonio-4",
+    "name": "Gonzalo P.",
+    "neighborhood": "Barrio Norte",
+    "text": "Volví a confiar en ir al dentista. Todo es claro, prolijo y con resultados visibles."
+  },
+  {
+    "id": "testimonio-5",
+    "name": "Carolina M.",
+    "neighborhood": "Caballito",
+    "text": "Atendieron a mi hija con mucha paciencia. Nos explicaron hábitos y controles de forma simple."
+  }
+]
