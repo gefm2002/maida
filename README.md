@@ -1,37 +1,76 @@
-# Maida Smirlian Odontología — Landing que vende por vos
+# Propuesta comercial — Maida Smirlian Odontología
 
-Una página hecha para **convertir visitas en consultas reales**, con un recorrido claro, confiable y directo a WhatsApp. No sólo se ve bien: **trabaja 24/7 para llenar la agenda**.
+**Empresa:** Structura · [structura.com.ar](https://structura.com.ar/)  
+**Responsable:** Gaston Fernandez  
+**Proyecto:** Landing comercial para consultorio odontológico
 
-## Lo que esta landing logra
+---
 
-- **Más turnos, menos vueltas**: cada botón abre un WhatsApp con el mensaje exacto según el tratamiento. Menos preguntas repetidas, más cierres.
-- **Agenda ordenada y autogestionada**: los turnos se coordinan en Google Calendar, con disponibilidad real y confirmación inmediata.
-- **Confianza en segundos**: FAQs, testimonios, fotos y un diseño premium reducen la duda y aceleran la decisión.
-- **Presencia local fuerte**: dirección + mapa = visibilidad. Te encuentran por zona aunque no usen redes sociales.
-- **Reseñas que venden**: integrar el perfil de Google Comercio permite que los pacientes dejen opiniones y te posicionen arriba.
+## Objetivo
 
-## WhatsApp listo para convertir
+Crear una landing profesional que genere consultas directas por WhatsApp, ordene el contacto con pacientes y mejore la visibilidad local del consultorio.
 
-Mensajes prearmados para cada consulta (se puede personalizar):
+---
 
-- **Ortodoncia**: “Hola, quiero consultar por ortodoncia (convencional o estética).”
-- **Limpieza dental**: “Hola, quiero reservar una limpieza dental.”
-- **Bruxismo**: “Hola, necesito consultar por bruxismo y placas de descanso.”
-- **Odontología general**: “Hola, quiero agendar un control de odontología general.”
-- **Niños y adolescentes**: “Hola, quiero consultar por atención para niños/adolescentes.”
+## Alcance del servicio
 
-## Calendario de Google: turnos sin fricción
+- Diseño y desarrollo de landing comercial.
+- Secciones: hero, servicios, galería, testimonios, FAQs, reservas, contacto y mapa.
+- CTAs a WhatsApp con mensajes prearmados por tipo de consulta.
+- Integración de Google Analytics para medición del tráfico.
+- Calendario de Google para turnos (auto-gestión).
 
-El paciente elige día y horario desde un calendario claro y familiar. Vos ganás tiempo, orden y previsibilidad.
+---
 
-## Mapa + Google Comercio: aparecer donde te buscan
+## Beneficios clave
 
-Con la ubicación visible y el consultorio cargado en Google:
+- Más consultas reales con mensajes guiados por WhatsApp.
+- Agenda ordenada con turnos online simples.
+- Presencia en búsquedas locales con dirección + mapa.
+- Posibilidad de reseñas y visibilidad en Google Comercio.
 
-- Aparecés cuando buscan “odontólogo en Recoleta”.
-- La gente llega fácil y con confianza.
-- Se acumulan reseñas reales que aumentan la elección.
+---
 
-## En una línea
+## Hosting y dominio
 
-**Una landing que genera consultas, ordena la agenda y potencia la reputación local** sin depender de redes sociales.
+- **Hosting gratuito el primer año**, salvo que la demanda de tráfico supere la cuota mensual.
+- En caso de excedente, se evaluará la mejor opción de hosting pago.
+- **Dominio**: la registración será gestionada por Structura (dummy/cliente).  
+  **Costo anual del dominio:** **ARS 8.500** (a cargo del cliente).
+
+---
+
+## Google Comercio (Business Profile)
+
+Opcional. Puede incluirse asistencia si el cliente ya cuenta con cuenta de Google Comercio para vincular dirección, mapa y reseñas.
+
+---
+
+## Compromiso del cliente
+
+- Validar diseño y textos finales.
+- Confirmar servicios.
+- Entregar material necesario (imágenes, logo, información) para la versión final.
+
+---
+
+## Inversión
+
+**USD 180** (pago único).  
+Incluye el diseño actual. Cambios futuros o nuevos requerimientos se cotizan aparte.
+
+---
+
+## Modalidad de pago
+
+- **50% al aprobar la propuesta**  
+- **50% al salir a producción**
+
+**Medios de pago:** transferencia o depósito en USD.  
+También se acepta pago en pesos a **valor dólar blue promedio** (compra/venta).
+
+---
+
+## Cierre
+
+Esta landing está pensada para **vender por vos**: genera consultas, ordena la agenda y posiciona el consultorio en Google con una presencia profesional y confiable.
