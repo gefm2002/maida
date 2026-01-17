@@ -1,17 +1,18 @@
-# Maida Smirlian Odontología — Landing de captación
+# Maida Smirlian Odontología — Landing que vende por vos
 
-Esta landing está pensada para ordenar el contacto con pacientes, aumentar turnos y mejorar la visibilidad local del consultorio sin depender sólo de redes sociales.
+Una página hecha para **convertir visitas en consultas reales**, con un recorrido claro, confiable y directo a WhatsApp. No sólo se ve bien: **trabaja 24/7 para llenar la agenda**.
 
-## Beneficios principales
+## Lo que esta landing logra
 
-- **Contactos normalizados por WhatsApp**: cada botón abre un mensaje prearmado según el tipo de consulta, lo que reduce ida y vuelta y acelera la reserva.
-- **Agenda organizada con Google Calendar**: los turnos se autogestionan desde un calendario online, simple y conocido para el paciente.
-- **Preguntas frecuentes claras**: reduce dudas repetidas y mejora la confianza antes del primer contacto.
-- **Dirección con mapa**: facilita cómo llegar y transmite profesionalismo y cercanía.
-- **Presencia en búsquedas**: ayuda a aparecer cuando alguien busca “odontólogo en Recoleta”, incluso si no usa redes sociales.
-- **Google Comercio (Business Profile)**: con el mapa y los datos correctos, el consultorio puede recibir reseñas y destacarse en la zona.
+- **Más turnos, menos vueltas**: cada botón abre un WhatsApp con el mensaje exacto según el tratamiento. Menos preguntas repetidas, más cierres.
+- **Agenda ordenada y autogestionada**: los turnos se coordinan en Google Calendar, con disponibilidad real y confirmación inmediata.
+- **Confianza en segundos**: FAQs, testimonios, fotos y un diseño premium reducen la duda y aceleran la decisión.
+- **Presencia local fuerte**: dirección + mapa = visibilidad. Te encuentran por zona aunque no usen redes sociales.
+- **Reseñas que venden**: integrar el perfil de Google Comercio permite que los pacientes dejen opiniones y te posicionen arriba.
 
-## WhatsApp: mensajes sugeridos por tipo de consulta
+## WhatsApp listo para convertir
+
+Mensajes prearmados para cada consulta (se puede personalizar):
 
 - **Ortodoncia**: “Hola, quiero consultar por ortodoncia (convencional o estética).”
 - **Limpieza dental**: “Hola, quiero reservar una limpieza dental.”
@@ -19,24 +20,18 @@ Esta landing está pensada para ordenar el contacto con pacientes, aumentar turn
 - **Odontología general**: “Hola, quiero agendar un control de odontología general.”
 - **Niños y adolescentes**: “Hola, quiero consultar por atención para niños/adolescentes.”
 
-## Calendario de turnos
+## Calendario de Google: turnos sin fricción
 
-Se integra un calendario de Google para que cada persona elija día y horario disponible, con confirmación automática y sin depender de una respuesta manual inmediata.
+El paciente elige día y horario desde un calendario claro y familiar. Vos ganás tiempo, orden y previsibilidad.
 
-## Mapa y visibilidad local
+## Mapa + Google Comercio: aparecer donde te buscan
 
-La landing muestra la dirección con Google Maps y puede vincularse al perfil de Google Comercio. Esto:
+Con la ubicación visible y el consultorio cargado en Google:
 
-- Mejora la confianza.
-- Facilita llegar al consultorio.
-- Permite dejar reseñas visibles para futuros pacientes.
-- Ayuda a aparecer en búsquedas por zona.
+- Aparecés cuando buscan “odontólogo en Recoleta”.
+- La gente llega fácil y con confianza.
+- Se acumulan reseñas reales que aumentan la elección.
 
-## En resumen
+## En una línea
 
-Una landing simple y clara que:
-
-- Genera más consultas.
-- Ordena el contacto.
-- Ahorra tiempo administrativo.
-- Mejora la reputación local.
+**Una landing que genera consultas, ordena la agenda y potencia la reputación local** sin depender de redes sociales.
