@@ -384,20 +384,38 @@ function App() {
                   <p className="text-sm font-semibold text-petrol">Redes</p>
                   <div className="mt-3 flex gap-4 text-sm text-slate-600">
                     <a
-                      className="transition hover:text-petrol"
+                      className="inline-flex items-center gap-2 transition hover:text-petrol"
                       href={site.instagramUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Instagram"
                     >
-                      📸 Instagram
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        className="h-4 w-4"
+                        fill="currentColor"
+                      >
+                        <path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9A4.5 4.5 0 0 1 16.5 21h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm0 1.5A3 3 0 0 0 4.5 7.5v9A3 3 0 0 0 7.5 19.5h9a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3h-9zm10.2 1.8a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zM12 7.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm0 1.5A3.3 3.3 0 1 0 15.3 12 3.3 3.3 0 0 0 12 8.7z" />
+                      </svg>
+                      Instagram
                     </a>
                     <a
-                      className="transition hover:text-petrol"
+                      className="inline-flex items-center gap-2 transition hover:text-petrol"
                       href={site.facebookUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Facebook"
                     >
-                      📘 Facebook
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        className="h-4 w-4"
+                        fill="currentColor"
+                      >
+                        <path d="M13.5 8.25V6.6c0-.6.3-.9.9-.9h1.35V3H14.4c-1.95 0-3.15 1.2-3.15 3.15v2.1H9V10.8h2.25V21h2.55V10.8h2.1l.45-2.55h-2.55z" />
+                      </svg>
+                      Facebook
                     </a>
                   </div>
                 </div>
@@ -425,20 +443,38 @@ function App() {
             </a>
             <div className="flex gap-4 text-sm text-slate-600">
               <a
-                className="transition hover:text-petrol"
+                className="inline-flex items-center gap-2 transition hover:text-petrol"
                 href={site.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
               >
-                📸 Instagram
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  className="h-4 w-4"
+                  fill="currentColor"
+                >
+                  <path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9A4.5 4.5 0 0 1 16.5 21h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm0 1.5A3 3 0 0 0 4.5 7.5v9A3 3 0 0 0 7.5 19.5h9a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3h-9zm10.2 1.8a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zM12 7.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm0 1.5A3.3 3.3 0 1 0 15.3 12 3.3 3.3 0 0 0 12 8.7z" />
+                </svg>
+                Instagram
               </a>
               <a
-                className="transition hover:text-petrol"
+                className="inline-flex items-center gap-2 transition hover:text-petrol"
                 href={site.facebookUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Facebook"
               >
-                📘 Facebook
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  className="h-4 w-4"
+                  fill="currentColor"
+                >
+                  <path d="M13.5 8.25V6.6c0-.6.3-.9.9-.9h1.35V3H14.4c-1.95 0-3.15 1.2-3.15 3.15v2.1H9V10.8h2.25V21h2.55V10.8h2.1l.45-2.55h-2.55z" />
+                </svg>
+                Facebook
               </a>
             </div>
           </div>
