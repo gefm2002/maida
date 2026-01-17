@@ -5,7 +5,7 @@
     "description": "Diagnóstico personalizado, planificación digital y seguimiento cercano para alinear tu sonrisa con comodidad.",
     "ctaLabel": "Consultar por ortodoncia",
     "whatsappMessage": "Hola, quiero consultar por ortodoncia (convencional o estética).",
-    "imageUrl": "https://images.unsplash.com/photo-1588776813673-49cc0da3b821?auto=format&fit=crop&w=1200&q=80"
+    "imageUrl": "/img/stock/service-ortodoncia.jpg"
   },
   {
     "id": "limpieza",
@@ -13,7 +13,7 @@
     "description": "Profilaxis completa para cuidar encías, eliminar manchas y mantener una salud bucal estable.",
     "ctaLabel": "Quiero una limpieza",
     "whatsappMessage": "Hola, quiero reservar una limpieza dental.",
-    "imageUrl": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1200&q=80"
+    "imageUrl": "/img/stock/service-limpieza.jpg"
   },
   {
     "id": "bruxismo",
@@ -21,7 +21,7 @@
     "description": "Evaluación integral para aliviar tensiones, proteger tus dientes y mejorar el descanso.",
     "ctaLabel": "Consultar por bruxismo",
     "whatsappMessage": "Hola, necesito consultar por bruxismo y placas de descanso.",
-    "imageUrl": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=1200&q=80"
+    "imageUrl": "/img/stock/service-bruxismo.jpg"
   },
   {
     "id": "general",
@@ -29,7 +29,7 @@
     "description": "Controles, tratamientos preventivos y restauraciones con enfoque conservador y seguro.",
     "ctaLabel": "Agendar control",
     "whatsappMessage": "Hola, quiero agendar un control de odontología general.",
-    "imageUrl": "https://images.unsplash.com/photo-1588776814546-1c1d1e0f0d3a?auto=format&fit=crop&w=1200&q=80"
+    "imageUrl": "/img/stock/service-general.jpg"
   },
   {
     "id": "pediatria",
@@ -37,6 +37,6 @@
     "description": "Acompañamiento amable y educativo para crear hábitos saludables desde temprano.",
     "ctaLabel": "Consultar por atención infantil",
     "whatsappMessage": "Hola, quiero consultar por atención para niños/adolescentes.",
-    "imageUrl": "https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=1200&q=80"
+    "imageUrl": "/img/stock/service-pediatria.jpg"
   }
 ]

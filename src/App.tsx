@@ -150,9 +150,6 @@ function App() {
                   Reservar turno
                 </a>
               </div>
-              <p className="mt-3 text-xs text-slate-500">
-                Link de reserva externo (Google Calendar).
-              </p>
             </div>
             <div className="relative">
               <div className="flex items-center justify-center overflow-hidden rounded-3xl bg-white p-6 shadow-soft">
@@ -291,7 +288,6 @@ function App() {
               >
                 Reservar turno
               </a>
-              <p className="mt-3 text-xs text-slate-500">Link externo de Google Calendar.</p>
             </div>
           </div>
         </section>

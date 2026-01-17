@@ -3,42 +3,42 @@
     "id": "antes-despues-1",
     "title": "Antes y después - Ortodoncia",
     "type": "Antes y después",
-    "imageUrl": "https://images.unsplash.com/photo-1588776813673-49cc0da3b821?auto=format&fit=crop&w=1200&q=80",
+    "imageUrl": "/img/stock/gallery-antes-1.jpg",
     "description": "Corrección de alineación con seguimiento personalizado."
   },
   {
     "id": "antes-despues-2",
     "title": "Antes y después - Estética dental",
     "type": "Antes y después",
-    "imageUrl": "https://images.unsplash.com/photo-1588776813938-75f5c7a9f8d7?auto=format&fit=crop&w=1200&q=80",
+    "imageUrl": "/img/stock/gallery-antes-2.jpg",
     "description": "Mejora estética y funcional para una sonrisa armónica."
   },
   {
     "id": "consultorio-1",
     "title": "Consultorio cuidado",
     "type": "Consultorio",
-    "imageUrl": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1200&q=80",
+    "imageUrl": "/img/stock/gallery-consultorio-1.jpg",
     "description": "Ambiente moderno, limpio y pensado para tu comodidad."
   },
   {
     "id": "consultorio-2",
     "title": "Atención humana",
     "type": "Atención",
-    "imageUrl": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=1200&q=80",
+    "imageUrl": "/img/stock/gallery-atencion-1.jpg",
     "description": "Equipo cercano que explica cada paso del tratamiento."
   },
   {
     "id": "consultorio-3",
     "title": "Tecnología y detalle",
     "type": "Consultorio",
-    "imageUrl": "https://images.unsplash.com/photo-1588776814546-1c1d1e0f0d3a?auto=format&fit=crop&w=1200&q=80",
+    "imageUrl": "/img/stock/gallery-consultorio-2.jpg",
     "description": "Equipamiento actualizado para resultados confiables."
   },
   {
     "id": "consultorio-4",
     "title": "Seguimiento personalizado",
     "type": "Atención",
-    "imageUrl": "https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=1200&q=80",
+    "imageUrl": "/img/stock/gallery-atencion-2.jpg",
     "description": "Control cercano para mantener tu sonrisa saludable."
   }
 ]
