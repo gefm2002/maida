@@ -1,42 +1,90 @@
 [
   {
     "id": "ortodoncia",
-    "title": "Ortodoncia convencional y estética",
-    "description": "Diagnóstico personalizado, planificación digital y seguimiento cercano para alinear tu sonrisa con comodidad.",
+    "slug": "ortodoncia-convencional",
+    "title": "Ortodoncia convencional",
+    "description": "Tu tratamiento se define según tu caso. En algunos casos se evalúan alineadores invisibles, pero mi base de trabajo es la ortodoncia convencional por su predictibilidad y seguimiento cercano.",
     "ctaLabel": "Consultar por ortodoncia",
-    "whatsappMessage": "Hola, quiero consultar por ortodoncia (convencional o estética).",
-    "imageUrl": "/img/stock/service-ortodoncia.jpg"
+    "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Ortodoncia convencional. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
+    "isActive": true,
+    "order": 1,
+    "image": "/img/stock/service-ortodoncia.jpg"
   },
   {
     "id": "limpieza",
+    "slug": "limpieza-dental",
     "title": "Limpieza dental profesional",
-    "description": "Profilaxis completa para cuidar encías, eliminar manchas y mantener una salud bucal estable.",
-    "ctaLabel": "Quiero una limpieza",
-    "whatsappMessage": "Hola, quiero reservar una limpieza dental.",
-    "imageUrl": "/img/stock/service-limpieza.jpg"
+    "description": "Profilaxis completa para cuidar encías, eliminar manchas y sostener una salud bucal estable.",
+    "ctaLabel": "Consultar por limpieza",
+    "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Limpieza dental profesional. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
+    "isActive": true,
+    "order": 2,
+    "image": "/img/stock/service-limpieza.jpg"
   },
   {
     "id": "bruxismo",
+    "slug": "bruxismo-placas",
     "title": "Bruxismo y placas de descanso",
     "description": "Evaluación integral para aliviar tensiones, proteger tus dientes y mejorar el descanso.",
     "ctaLabel": "Consultar por bruxismo",
-    "whatsappMessage": "Hola, necesito consultar por bruxismo y placas de descanso.",
-    "imageUrl": "/img/stock/service-bruxismo.jpg"
+    "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Bruxismo y placas de descanso. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
+    "isActive": true,
+    "order": 3,
+    "image": "/img/stock/service-bruxismo.jpg"
+  },
+  {
+    "id": "endodoncia",
+    "slug": "endodoncia",
+    "title": "Tratamientos de conducto (Endodoncia)",
+    "description": "Tratamientos de conducto realizados por especialistas, con diagnóstico y seguimiento cuidadoso para conservar tu pieza dental.",
+    "ctaLabel": "Consultar por conducto",
+    "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Tratamientos de conducto (Endodoncia). Mi barrio es {barrio}. Mi teléfono es {telefono}.",
+    "isActive": true,
+    "order": 4,
+    "image": "/img/stock/service-general.jpg"
+  },
+  {
+    "id": "implantes",
+    "slug": "implantes",
+    "title": "Implantes",
+    "description": "Evaluación personalizada para recuperar función y estética con un plan seguro y confiable.",
+    "ctaLabel": "Consultar por implantes",
+    "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Implantes. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
+    "isActive": true,
+    "order": 5,
+    "image": "/img/stock/gallery-consultorio-1.jpg"
+  },
+  {
+    "id": "protesis",
+    "slug": "protesis",
+    "title": "Prótesis fija y removible",
+    "description": "Soluciones a medida para recuperar tu sonrisa con un enfoque cómodo y funcional.",
+    "ctaLabel": "Consultar por prótesis",
+    "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Prótesis fija y removible. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
+    "isActive": true,
+    "order": 6,
+    "image": "/img/stock/gallery-consultorio-2.jpg"
   },
   {
     "id": "general",
+    "slug": "odontologia-general",
     "title": "Odontología general",
     "description": "Controles, tratamientos preventivos y restauraciones con enfoque conservador y seguro.",
     "ctaLabel": "Agendar control",
-    "whatsappMessage": "Hola, quiero agendar un control de odontología general.",
-    "imageUrl": "/img/stock/service-general.jpg"
+    "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Odontología general. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
+    "isActive": true,
+    "order": 7,
+    "image": "/img/stock/service-general.jpg"
   },
   {
     "id": "pediatria",
+    "slug": "atencion-infantil",
     "title": "Atención a niños y adolescentes",
     "description": "Acompañamiento amable y educativo para crear hábitos saludables desde temprano.",
     "ctaLabel": "Consultar por atención infantil",
-    "whatsappMessage": "Hola, quiero consultar por atención para niños/adolescentes.",
-    "imageUrl": "/img/stock/atencion.png"
+    "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Atención a niños y adolescentes. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
+    "isActive": true,
+    "order": 8,
+    "image": "/img/stock/atencion.png"
   }
 ]

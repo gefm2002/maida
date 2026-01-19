@@ -12,6 +12,18 @@ type FormState = {
   reason: string
 }
 
+type Service = {
+  id: string
+  slug: string
+  title: string
+  description: string
+  ctaLabel: string
+  ctaMessage: string
+  isActive: boolean
+  order: number
+  image: string
+}
+
 const buildWhatsAppLink = (message: string) => {
   const base = `https://wa.me/${site.whatsappNumber}`
   return `${base}?text=${encodeURIComponent(message)}`
@@ -33,6 +45,7 @@ function App() {
     area: '',
     reason: '',
   })
+  const [selectedService, setSelectedService] = useState<string>('')
 
   useEffect(() => {
     const gaId = import.meta.env.VITE_GA_ID
@@ -63,7 +76,8 @@ function App() {
 
   const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const message = `Hola, soy ${formData.name}. Mi teléfono es ${formData.phone}. Soy de ${formData.area} y quiero consultar por: ${formData.reason}.`
+    const reason = formData.reason || selectedService || 'consulta general'
+    const message = `Hola, soy ${formData.name}. Quiero consultar por ${reason}. Mi barrio es ${formData.area}. Mi teléfono es ${formData.phone}.`
     trackEvent('whatsapp_click', 'contacto_formulario')
     window.open(buildWhatsAppLink(message), '_blank', 'noopener,noreferrer')
   }
@@ -74,6 +88,15 @@ function App() {
 
   const handleBookingClick = (label: string) => {
     trackEvent('reservar_click', label)
+  }
+
+  const handleServiceClick = (service: Service) => {
+    setSelectedService(service.title)
+    setFormData((prev) => ({
+      ...prev,
+      reason: service.title,
+    }))
+    trackEvent('whatsapp_click', `servicio_${service.slug}`)
   }
 
   return (
@@ -119,12 +142,12 @@ function App() {
       <main className="pb-24">
         <section className="bg-light-gray">
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-20 md:grid-cols-2 md:items-center md:py-28">
-            <div>
+      <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-mint-dark">
                 Recoleta · CABA
               </p>
               <h1 className="mt-4 text-3xl font-semibold text-petrol md:text-5xl">
-                Ortodoncia y salud dental con atención personalizada en Recoleta
+                Ortodoncia y salud bucal con atención personalizada en Recoleta
               </h1>
               <p className="mt-4 text-base text-slate-600 md:text-lg">
                 Un consultorio cuidado, con acompañamiento humano y resultados visibles.
@@ -176,28 +199,31 @@ function App() {
           <p className="section-subtitle">
             Tratamientos pensados para cuidarte hoy y proyectar una sonrisa saludable a largo plazo.
           </p>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {services.map((service) => (
-              <div key={service.id} className="card">
-                <img
-                  src={service.imageUrl}
-                  alt={service.title}
-                  className="h-40 w-full rounded-2xl object-cover"
-                  loading="lazy"
-                />
-                <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
-                <p className="mt-3 text-sm text-slate-600">{service.description}</p>
-                <a
-                  className="btn-secondary mt-6"
-                  href={buildWhatsAppLink(service.whatsappMessage)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => handleWhatsAppClick(`servicio_${service.id}`)}
-                >
-                  💬 {service.ctaLabel}
-                </a>
-              </div>
-            ))}
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {(services as Service[])
+              .filter((service) => service.isActive)
+              .sort((a, b) => a.order - b.order)
+              .map((service) => (
+                <div key={service.id} className="card">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="h-40 w-full rounded-2xl object-cover"
+                    loading="lazy"
+                  />
+                  <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
+                  <p className="mt-3 text-sm text-slate-600">{service.description}</p>
+                  <a
+                    className="btn-secondary mt-6"
+                    href={buildWhatsAppLink(service.ctaMessage)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => handleServiceClick(service)}
+                  >
+                    💬 {service.ctaLabel}
+        </a>
+      </div>
+              ))}
           </div>
         </section>
 
@@ -345,7 +371,7 @@ function App() {
                     <textarea
                       className="mt-2 min-h-[120px] w-full rounded-xl border border-slate-200 px-4 py-3 text-sm"
                       name="reason"
-                      value={formData.reason}
+                      value={formData.reason || selectedService}
                       onChange={(event) =>
                         setFormData((prev) => ({ ...prev, reason: event.target.value }))
                       }
