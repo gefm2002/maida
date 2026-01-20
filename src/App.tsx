@@ -225,7 +225,7 @@ function App() {
               .filter((service) => service.isActive)
               .sort((a, b) => a.order - b.order)
               .map((service) => (
-                <div key={service.id} className="card">
+                <div key={service.id} className="card flex h-full flex-col">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -235,7 +235,7 @@ function App() {
                   <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
                   <p className="mt-3 text-sm text-slate-600">{service.description}</p>
                   <a
-                    className="btn-secondary mt-6"
+                    className="btn-secondary mt-6 self-start lg:mt-auto"
                     href={buildWhatsAppLink(service.ctaMessage)}
                     target="_blank"
                     rel="noopener noreferrer"
