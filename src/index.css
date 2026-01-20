@@ -42,9 +42,9 @@ a {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90 focus-visible:outline-none;
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90 focus-visible:outline-none;
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center rounded-full border border-petrol px-6 py-3 text-sm font-semibold text-petrol transition hover:bg-petrol hover:text-white;
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-petrol px-6 py-3 text-sm font-semibold text-petrol transition hover:bg-petrol hover:text-white;
 }

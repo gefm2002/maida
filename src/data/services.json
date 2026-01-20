@@ -41,7 +41,7 @@
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Tratamientos de conducto (Endodoncia). Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
     "order": 4,
-    "image": "/img/stock/service-general.jpg"
+    "image": "/img/stock/tratamientodeconducto.png"
   },
   {
     "id": "implantes",
