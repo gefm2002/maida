@@ -8,7 +8,7 @@
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Ortodoncia convencional. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
     "order": 1,
-    "image": "/img/stock/service-ortodoncia.jpg"
+    "image": "/img/stock/Ortodoncia.png"
   },
   {
     "id": "limpieza",
@@ -41,7 +41,7 @@
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Tratamientos de conducto (Endodoncia). Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
     "order": 4,
-    "image": "/img/stock/tratamientodeconducto.png"
+    "image": "/img/stock/endodoncia.png"
   },
   {
     "id": "implantes",
