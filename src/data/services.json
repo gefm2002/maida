@@ -19,7 +19,7 @@
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Limpieza dental profesional. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
     "order": 2,
-    "image": "/img/stock/service-limpieza.jpg"
+    "image": "/img/stock/limpieza.png"
   },
   {
     "id": "bruxismo",
@@ -52,7 +52,7 @@
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Implantes. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
     "order": 5,
-    "image": "/img/stock/gallery-consultorio-1.jpg"
+    "image": "/img/stock/implante.png"
   },
   {
     "id": "protesis",
@@ -63,7 +63,7 @@
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Prótesis fija y removible. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
     "order": 6,
-    "image": "/img/stock/gallery-consultorio-2.jpg"
+    "image": "/img/stock/protesis.png"
   },
   {
     "id": "general",
