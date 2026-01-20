@@ -102,10 +102,6 @@ function App() {
     trackEvent('whatsapp_click', label)
   }
 
-  const handleBookingClick = (label: string) => {
-    trackEvent('reservar_click', label)
-  }
-
   const handleServiceClick = (service: Service) => {
     setSelectedService(service.title)
     setFormData((prev) => ({
