@@ -1,4 +1,4 @@
-import { type FormEvent, useEffect, useState } from 'react'
+import { type FormEvent, useState } from 'react'
 import site from './data/site.json'
 import services from './data/services.json'
 import gallery from './data/gallery.json'
@@ -62,33 +62,6 @@ function App() {
     reason: '',
   })
   const [selectedService, setSelectedService] = useState<string>('')
-
-  useEffect(() => {
-    const gaId = import.meta.env.VITE_GA_ID
-    if (!gaId || gaId === 'VITE_GA_ID') {
-      return
-    }
-
-    const existingScript = document.querySelector('script[data-ga="true"]')
-    if (existingScript) {
-      return
-    }
-
-    const script = document.createElement('script')
-    script.async = true
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`
-    script.dataset.ga = 'true'
-    document.head.appendChild(script)
-
-    window.dataLayer = window.dataLayer || []
-    window.gtag =
-      window.gtag ||
-      ((...args: unknown[]) => {
-        window.dataLayer?.push(args)
-      })
-    window.gtag('js', new Date())
-    window.gtag('config', gaId)
-  }, [])
 
   const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
