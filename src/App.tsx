@@ -243,7 +243,7 @@ function App() {
                   >
                     <WhatsAppIcon className="h-4 w-4" />
                     {service.ctaLabel}
-                  </a>
+        </a>
       </div>
               ))}
           </div>
@@ -352,7 +352,7 @@ function App() {
                   <label className="text-sm font-semibold text-petrol">
                     Nombre y apellido
                     <input
-                      className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm"
+                      className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
                       type="text"
                       name="name"
                       value={formData.name}
@@ -365,7 +365,7 @@ function App() {
                   <label className="text-sm font-semibold text-petrol">
                     Teléfono
                     <input
-                      className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm"
+                      className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
                       type="tel"
                       name="phone"
                       value={formData.phone}
@@ -378,7 +378,7 @@ function App() {
                   <label className="text-sm font-semibold text-petrol">
                     Barrio / zona
                     <input
-                      className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3 text-sm"
+                      className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
                       type="text"
                       name="area"
                       value={formData.area}
@@ -391,7 +391,7 @@ function App() {
                   <label className="text-sm font-semibold text-petrol">
                     Motivo de consulta
                     <textarea
-                      className="mt-2 min-h-[120px] w-full rounded-xl border border-slate-200 px-4 py-3 text-sm"
+                      className="mt-2 min-h-[120px] w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
                       name="reason"
                       value={formData.reason || selectedService}
                       onChange={(event) =>

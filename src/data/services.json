@@ -30,7 +30,7 @@
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Bruxismo y placas de descanso. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
     "order": 3,
-    "image": "/img/stock/service-bruxismo.jpg"
+    "image": "/img/stock/bruxismo.png"
   },
   {
     "id": "endodoncia",
