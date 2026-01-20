@@ -186,10 +186,10 @@ function App() {
                 </a>
                 <a
                   className="btn-secondary"
-                  href={site.bookingUrl}
+                  href={buildWhatsAppLink('Hola, quiero reservar un turno.')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => handleBookingClick('hero')}
+                  onClick={() => handleWhatsAppClick('hero_reserva')}
                 >
                   Reservar turno
                 </a>
@@ -308,6 +308,32 @@ function App() {
           </div>
         </section>
 
+        <section id="pagos" className="mx-auto w-full max-w-6xl px-5 py-20">
+          <h2 className="section-title">Medios de pago</h2>
+          <p className="section-subtitle">
+            Opciones flexibles para que elijas la que mejor te quede.
+          </p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              'Efectivo',
+              'Transferencia bancaria',
+              'Mercado Pago',
+              'Tarjeta de crédito',
+              'Tarjeta de débito',
+            ].map((method) => (
+              <div
+                key={method}
+                className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-white px-5 py-4 shadow-soft"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-light-gray text-petrol">
+                  $
+                </div>
+                <p className="text-sm font-semibold text-petrol">{method}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section id="reservas" className="mx-auto w-full max-w-6xl px-5 py-20">
           <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
             <div>
@@ -329,10 +355,10 @@ function App() {
               </p>
               <a
                 className="btn-primary mt-6 w-full"
-                href={site.bookingUrl}
+                href={buildWhatsAppLink('Hola, quiero reservar un turno.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => handleBookingClick('reservas')}
+                onClick={() => handleWhatsAppClick('reservas')}
               >
                 Reservar turno
               </a>
