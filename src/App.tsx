@@ -346,9 +346,6 @@ function App() {
             </div>
             <div className="rounded-3xl border border-slate-100 bg-white p-8 shadow-soft">
               <p className="text-sm font-semibold text-petrol">Reservá tu visita</p>
-              <p className="mt-2 text-sm text-slate-600">
-                Reservá online con nuestro calendario de Google.
-              </p>
               <a
                 className="btn-primary mt-6 w-full"
                 href={buildWhatsAppLink('Hola, quiero reservar un turno.')}
