@@ -250,7 +250,7 @@ function App() {
           <div className="mx-auto w-full max-w-6xl px-5">
             <h2 className="section-title">Galería</h2>
             <p className="section-subtitle">
-              Elegí un cluster para ver las fotos en miniatura y navegar con visor.
+              Explorá cada categoría y mirá las fotos con detalle.
             </p>
             <div className="mt-8 space-y-4">
               {galleryClusters.map((cluster) => {
@@ -360,7 +360,7 @@ function App() {
                                     className="h-20 w-full object-cover"
                                     loading="lazy"
                                   />
-                                </button>
+        </button>
                               ))}
                             </div>
                           </div>
