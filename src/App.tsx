@@ -226,13 +226,13 @@ function App() {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="h-48 w-full rounded-2xl object-cover"
+                    className="h-60 w-full rounded-2xl object-cover"
                     loading="lazy"
                   />
                   <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
                   <p className="mt-3 text-sm text-slate-600">{service.description}</p>
                   <a
-                    className="btn-secondary mt-6 self-start lg:mt-auto"
+                    className="btn-secondary mt-8 self-start lg:mt-auto"
                     href={buildWhatsAppLink(service.ctaMessage)}
                     target="_blank"
                     rel="noopener noreferrer"
