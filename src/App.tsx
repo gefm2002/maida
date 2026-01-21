@@ -28,6 +28,32 @@ type IconProps = {
   className?: string
 }
 
+type GalleryItem = {
+  id: string
+  title: string
+  type: string
+  imageUrl: string
+  description: string
+}
+
+const galleryTabs = [
+  {
+    id: 'Antes y después',
+    label: 'Antes y después',
+    description: 'Resultados reales que muestran cambios visibles y progresivos.',
+  },
+  {
+    id: 'Consultorio',
+    label: 'Consultorio',
+    description: 'Un espacio cuidado, moderno y pensado para tu comodidad.',
+  },
+  {
+    id: 'Atención',
+    label: 'Atención',
+    description: 'Trato cercano, humano y con seguimiento en cada etapa.',
+  },
+]
+
 const WhatsAppIcon = ({ className }: IconProps) => (
   <svg
     aria-hidden="true"
@@ -62,6 +88,8 @@ function App() {
     reason: '',
   })
   const [selectedService, setSelectedService] = useState<string>('')
+  const [activeGalleryTab, setActiveGalleryTab] = useState<string>(galleryTabs[0].id)
+  const [activeGalleryItem, setActiveGalleryItem] = useState<GalleryItem | null>(null)
 
   const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -222,21 +250,55 @@ function App() {
           <div className="mx-auto w-full max-w-6xl px-5">
             <h2 className="section-title">Galería</h2>
             <p className="section-subtitle">
-              Antes y después, consultorio cuidado y una atención que se nota en cada detalle.
+              Explora cada cluster con fotos de distintos tamaños y orientación.
             </p>
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
-              {gallery.map((item) => (
-                <div key={item.id} className="overflow-hidden rounded-2xl bg-white shadow-soft">
-                  <img src={item.imageUrl} alt={item.title} className="h-48 w-full object-cover" />
-                  <div className="p-4">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-mint-dark">
-                      {item.type}
-                    </p>
-                    <h3 className="mt-2 text-base font-semibold text-petrol">{item.title}</h3>
-                    <p className="mt-2 text-sm text-slate-600">{item.description}</p>
-                  </div>
-                </div>
+            <div className="mt-8 flex flex-wrap gap-3">
+              {galleryTabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setActiveGalleryTab(tab.id)}
+                  className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
+                    activeGalleryTab === tab.id
+                      ? 'bg-petrol text-white'
+                      : 'border border-slate-200 bg-white text-slate-600 hover:text-petrol'
+                  }`}
+                >
+                  {tab.label}
+                </button>
               ))}
+            </div>
+            <div className="mt-6 rounded-2xl bg-white p-5 shadow-soft">
+              <p className="text-sm font-semibold text-petrol">{activeGalleryTab}</p>
+              <p className="mt-2 text-sm text-slate-600">
+                {galleryTabs.find((tab) => tab.id === activeGalleryTab)?.description}
+              </p>
+            </div>
+            <div className="mt-10 columns-1 gap-5 space-y-5 sm:columns-2 lg:columns-3">
+              {(gallery as GalleryItem[])
+                .filter((item) => item.type === activeGalleryTab)
+                .map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => setActiveGalleryItem(item)}
+                    className="w-full break-inside-avoid overflow-hidden rounded-2xl bg-white text-left shadow-soft transition hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <img
+                      src={item.imageUrl}
+                      alt={item.title}
+                      className="h-auto w-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="p-4">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-mint-dark">
+                        {item.type}
+                      </p>
+                      <h3 className="mt-2 text-base font-semibold text-petrol">{item.title}</h3>
+                      <p className="mt-2 text-sm text-slate-600">{item.description}</p>
+                    </div>
+        </button>
+                ))}
             </div>
           </div>
         </section>
@@ -532,6 +594,42 @@ function App() {
           </a>
         </div>
       </footer>
+
+      {activeGalleryItem ? (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/80 p-6"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setActiveGalleryItem(null)}
+        >
+          <div
+            className="relative max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-3xl bg-white shadow-soft"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setActiveGalleryItem(null)}
+              className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-600 shadow"
+            >
+              Cerrar
+            </button>
+            <img
+              src={activeGalleryItem.imageUrl}
+              alt={activeGalleryItem.title}
+              className="max-h-[70vh] w-full object-contain"
+            />
+            <div className="p-6">
+              <p className="text-xs font-semibold uppercase tracking-wide text-mint-dark">
+                {activeGalleryItem.type}
+              </p>
+              <h3 className="mt-2 text-lg font-semibold text-petrol">
+                {activeGalleryItem.title}
+              </h3>
+              <p className="mt-2 text-sm text-slate-600">{activeGalleryItem.description}</p>
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       <a
         href={buildWhatsAppLink(site.whatsappDefaultMessage)}
