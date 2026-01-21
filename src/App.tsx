@@ -36,7 +36,7 @@ type GalleryItem = {
   description: string
 }
 
-const galleryTabs = [
+const galleryClusters = [
   {
     id: 'Antes y después',
     label: 'Antes y después',
@@ -88,8 +88,8 @@ function App() {
     reason: '',
   })
   const [selectedService, setSelectedService] = useState<string>('')
-  const [activeGalleryTab, setActiveGalleryTab] = useState<string>(galleryTabs[0].id)
-  const [activeGalleryItem, setActiveGalleryItem] = useState<GalleryItem | null>(null)
+  const [activeGalleryCluster, setActiveGalleryCluster] = useState<string>(galleryClusters[0].id)
+  const [activeGalleryItemId, setActiveGalleryItemId] = useState<string | null>(null)
 
   const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -250,55 +250,119 @@ function App() {
           <div className="mx-auto w-full max-w-6xl px-5">
             <h2 className="section-title">Galería</h2>
             <p className="section-subtitle">
-              Explora cada cluster con fotos de distintos tamaños y orientación.
+              Elegí un cluster para ver las fotos en miniatura y navegar con visor.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              {galleryTabs.map((tab) => (
-                <button
-                  key={tab.id}
-                  type="button"
-                  onClick={() => setActiveGalleryTab(tab.id)}
-                  className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
-                    activeGalleryTab === tab.id
-                      ? 'bg-petrol text-white'
-                      : 'border border-slate-200 bg-white text-slate-600 hover:text-petrol'
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-            <div className="mt-6 rounded-2xl bg-white p-5 shadow-soft">
-              <p className="text-sm font-semibold text-petrol">{activeGalleryTab}</p>
-              <p className="mt-2 text-sm text-slate-600">
-                {galleryTabs.find((tab) => tab.id === activeGalleryTab)?.description}
-              </p>
-            </div>
-            <div className="mt-10 columns-1 gap-5 space-y-5 sm:columns-2 lg:columns-3">
-              {(gallery as GalleryItem[])
-                .filter((item) => item.type === activeGalleryTab)
-                .map((item) => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    onClick={() => setActiveGalleryItem(item)}
-                    className="w-full break-inside-avoid overflow-hidden rounded-2xl bg-white text-left shadow-soft transition hover:-translate-y-1 hover:shadow-lg"
+            <div className="mt-8 space-y-4">
+              {galleryClusters.map((cluster) => {
+                const items = (gallery as GalleryItem[]).filter(
+                  (item) => item.type === cluster.id,
+                )
+                const activeIndex = Math.max(
+                  0,
+                  items.findIndex((item) => item.id === activeGalleryItemId),
+                )
+                const activeItem = items[activeIndex] || items[0]
+                const isOpen = activeGalleryCluster === cluster.id
+
+                return (
+                  <div
+                    key={cluster.id}
+                    className="overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-soft"
                   >
-                    <img
-                      src={item.imageUrl}
-                      alt={item.title}
-                      className="h-auto w-full object-cover"
-                      loading="lazy"
-                    />
-                    <div className="p-4">
-                      <p className="text-xs font-semibold uppercase tracking-wide text-mint-dark">
-                        {item.type}
-                      </p>
-                      <h3 className="mt-2 text-base font-semibold text-petrol">{item.title}</h3>
-                      <p className="mt-2 text-sm text-slate-600">{item.description}</p>
-                    </div>
-        </button>
-                ))}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setActiveGalleryCluster(cluster.id)
+                        setActiveGalleryItemId(items[0]?.id ?? null)
+                      }}
+                      className="flex w-full items-center justify-between px-6 py-4 text-left"
+                    >
+                      <div>
+                        <p className="text-sm font-semibold text-petrol">{cluster.label}</p>
+                        <p className="mt-1 text-xs text-slate-500">{cluster.description}</p>
+                      </div>
+                      <span className="text-sm text-slate-400">{isOpen ? '−' : '+'}</span>
+                    </button>
+
+                    {isOpen ? (
+                      <div className="border-t border-slate-100 px-6 pb-6 pt-5">
+                        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+                          <div className="relative overflow-hidden rounded-2xl bg-light-gray">
+                            {activeItem ? (
+                              <img
+                                src={activeItem.imageUrl}
+                                alt={activeItem.title}
+                                className="h-full w-full object-contain"
+                              />
+                            ) : null}
+                            {items.length > 1 ? (
+                              <>
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    const nextIndex =
+                                      (activeIndex - 1 + items.length) % items.length
+                                    setActiveGalleryItemId(items[nextIndex].id)
+                                  }}
+                                  className="absolute left-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-slate-600 shadow"
+                                >
+                                  ←
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    const nextIndex = (activeIndex + 1) % items.length
+                                    setActiveGalleryItemId(items[nextIndex].id)
+                                  }}
+                                  className="absolute right-4 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-slate-600 shadow"
+                                >
+                                  →
+                                </button>
+                              </>
+                            ) : null}
+                          </div>
+                          <div>
+                            {activeItem ? (
+                              <>
+                                <p className="text-xs font-semibold uppercase tracking-wide text-mint-dark">
+                                  {activeItem.type}
+                                </p>
+                                <h3 className="mt-2 text-lg font-semibold text-petrol">
+                                  {activeItem.title}
+                                </h3>
+                                <p className="mt-3 text-sm text-slate-600">
+                                  {activeItem.description}
+                                </p>
+                              </>
+                            ) : null}
+                            <div className="mt-6 grid grid-cols-3 gap-3">
+                              {items.map((item) => (
+                                <button
+                                  key={item.id}
+                                  type="button"
+                                  onClick={() => setActiveGalleryItemId(item.id)}
+                                  className={`overflow-hidden rounded-xl border transition ${
+                                    item.id === activeItem?.id
+                                      ? 'border-petrol'
+                                      : 'border-transparent'
+                                  }`}
+                                >
+                                  <img
+                                    src={item.imageUrl}
+                                    alt={item.title}
+                                    className="h-20 w-full object-cover"
+                                    loading="lazy"
+                                  />
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ) : null}
+                  </div>
+                )
+              })}
             </div>
           </div>
         </section>
@@ -594,42 +658,6 @@ function App() {
           </a>
         </div>
       </footer>
-
-      {activeGalleryItem ? (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/80 p-6"
-          role="dialog"
-          aria-modal="true"
-          onClick={() => setActiveGalleryItem(null)}
-        >
-          <div
-            className="relative max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-3xl bg-white shadow-soft"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <button
-              type="button"
-              onClick={() => setActiveGalleryItem(null)}
-              className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-600 shadow"
-            >
-              Cerrar
-            </button>
-            <img
-              src={activeGalleryItem.imageUrl}
-              alt={activeGalleryItem.title}
-              className="max-h-[70vh] w-full object-contain"
-            />
-            <div className="p-6">
-              <p className="text-xs font-semibold uppercase tracking-wide text-mint-dark">
-                {activeGalleryItem.type}
-              </p>
-              <h3 className="mt-2 text-lg font-semibold text-petrol">
-                {activeGalleryItem.title}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">{activeGalleryItem.description}</p>
-            </div>
-          </div>
-        </div>
-      ) : null}
 
       <a
         href={buildWhatsAppLink(site.whatsappDefaultMessage)}
