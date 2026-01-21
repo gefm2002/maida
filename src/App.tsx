@@ -38,6 +38,16 @@ type GalleryItem = {
 
 const galleryClusters = [
   {
+    id: 'Antes y después',
+    label: 'Antes y después',
+    description: 'Resultados reales que muestran cambios visibles y progresivos.',
+  },
+  {
+    id: 'Consultorio',
+    label: 'Consultorio',
+    description: 'Un espacio cuidado, moderno y pensado para tu comodidad.',
+  },
+  {
     id: 'Atención',
     label: 'Atención',
     description: 'Trato cercano, humano y con seguimiento en cada etapa.',
