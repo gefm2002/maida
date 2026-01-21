@@ -7,7 +7,35 @@
     "description": "Corrección de alineación con seguimiento personalizado."
   },
   {
+    "id": "antes-despues-1-b",
+    "title": "Antes y después - Ortodoncia",
+    "type": "Antes y después",
+    "imageUrl": "/img/stock/antesydespues.jpg",
+    "description": "Corrección de alineación con seguimiento personalizado."
+  },
+  {
+    "id": "antes-despues-1-c",
+    "title": "Antes y después - Ortodoncia",
+    "type": "Antes y después",
+    "imageUrl": "/img/stock/antesydespues.jpg",
+    "description": "Corrección de alineación con seguimiento personalizado."
+  },
+  {
     "id": "antes-despues-2",
+    "title": "Antes y después - Estética dental",
+    "type": "Antes y después",
+    "imageUrl": "/img/stock/gallery-antes-2.jpg",
+    "description": "Mejora estética y funcional para una sonrisa armónica."
+  },
+  {
+    "id": "antes-despues-2-b",
+    "title": "Antes y después - Estética dental",
+    "type": "Antes y después",
+    "imageUrl": "/img/stock/gallery-antes-2.jpg",
+    "description": "Mejora estética y funcional para una sonrisa armónica."
+  },
+  {
+    "id": "antes-despues-2-c",
     "title": "Antes y después - Estética dental",
     "type": "Antes y después",
     "imageUrl": "/img/stock/gallery-antes-2.jpg",
@@ -21,7 +49,35 @@
     "description": "Ambiente moderno, limpio y pensado para tu comodidad."
   },
   {
+    "id": "consultorio-1-b",
+    "title": "Consultorio cuidado",
+    "type": "Consultorio",
+    "imageUrl": "/img/stock/gallery-consultorio-1.jpg",
+    "description": "Ambiente moderno, limpio y pensado para tu comodidad."
+  },
+  {
+    "id": "consultorio-1-c",
+    "title": "Consultorio cuidado",
+    "type": "Consultorio",
+    "imageUrl": "/img/stock/gallery-consultorio-1.jpg",
+    "description": "Ambiente moderno, limpio y pensado para tu comodidad."
+  },
+  {
     "id": "consultorio-2",
+    "title": "Atención humana",
+    "type": "Atención",
+    "imageUrl": "/img/stock/gallery-atencion-1.jpg",
+    "description": "Equipo cercano que explica cada paso del tratamiento."
+  },
+  {
+    "id": "consultorio-2-b",
+    "title": "Atención humana",
+    "type": "Atención",
+    "imageUrl": "/img/stock/gallery-atencion-1.jpg",
+    "description": "Equipo cercano que explica cada paso del tratamiento."
+  },
+  {
+    "id": "consultorio-2-c",
     "title": "Atención humana",
     "type": "Atención",
     "imageUrl": "/img/stock/gallery-atencion-1.jpg",
@@ -35,7 +91,36 @@
     "description": "Equipamiento actualizado para resultados confiables."
   },
   {
+    "id": "consultorio-3-b",
+    "title": "Tecnología y detalle",
+    "type": "Consultorio",
+    "imageUrl": "/img/stock/gallery-consultorio-2.jpg",
+    "description": "Equipamiento actualizado para resultados confiables."
+  },
+  {
+    "id": "consultorio-3-c",
+    "title": "Tecnología y detalle",
+    "type": "Consultorio",
+    "imageUrl": "/img/stock/gallery-consultorio-2.jpg",
+    "description": "Equipamiento actualizado para resultados confiables."
+  },
+  {
     "id": "consultorio-4",
+    "title": "Seguimiento personalizado",
+    "type": "Atención",
+    "imageUrl": "/img/stock/gallery-atencion-2.jpg",
+    "description": "Control cercano para mantener tu sonrisa saludable."
+  }
+  ,
+  {
+    "id": "consultorio-4-b",
+    "title": "Seguimiento personalizado",
+    "type": "Atención",
+    "imageUrl": "/img/stock/gallery-atencion-2.jpg",
+    "description": "Control cercano para mantener tu sonrisa saludable."
+  },
+  {
+    "id": "consultorio-4-c",
     "title": "Seguimiento personalizado",
     "type": "Atención",
     "imageUrl": "/img/stock/gallery-atencion-2.jpg",
