@@ -88,7 +88,7 @@ function App() {
     reason: '',
   })
   const [selectedService, setSelectedService] = useState<string>('')
-  const [activeGalleryCluster, setActiveGalleryCluster] = useState<string>(galleryClusters[0].id)
+  const [activeGalleryCluster, setActiveGalleryCluster] = useState<string | null>(null)
   const [activeGalleryItemId, setActiveGalleryItemId] = useState<string | null>(null)
 
   const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -272,8 +272,13 @@ function App() {
                     <button
                       type="button"
                       onClick={() => {
-                        setActiveGalleryCluster(cluster.id)
-                        setActiveGalleryItemId(items[0]?.id ?? null)
+                        if (isOpen) {
+                          setActiveGalleryCluster(null)
+                          setActiveGalleryItemId(null)
+                        } else {
+                          setActiveGalleryCluster(cluster.id)
+                          setActiveGalleryItemId(items[0]?.id ?? null)
+                        }
                       }}
                       className="flex w-full items-center justify-between px-6 py-4 text-left"
                     >
@@ -281,7 +286,9 @@ function App() {
                         <p className="text-sm font-semibold text-petrol">{cluster.label}</p>
                         <p className="mt-1 text-xs text-slate-500">{cluster.description}</p>
                       </div>
-                      <span className="text-sm text-slate-400">{isOpen ? '−' : '+'}</span>
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-lg text-slate-500">
+                        {isOpen ? '−' : '+'}
+                      </span>
                     </button>
 
                     {isOpen ? (
