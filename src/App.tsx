@@ -226,7 +226,7 @@ function App() {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="h-40 w-full rounded-2xl object-cover"
+                    className="h-48 w-full rounded-2xl object-cover"
                     loading="lazy"
                   />
                   <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
