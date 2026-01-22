@@ -8,24 +8,38 @@
   },
   {
     "id": "antes-despues-2",
-    "title": "Antes y después - Estética dental",
+    "title": "Antes y después - Blanqueamiento interno",
     "type": "Antes y después",
-    "imageUrl": "/img/stock/gallery-antes-2.jpg",
-    "description": "Mejora estética y funcional para una sonrisa armónica."
+    "imageUrl": "/img/stock/Blanqueamiento interno.png",
+    "description": "Blanqueamiento interno para mejorar el color desde adentro de la pieza dental."
   },
   {
-    "id": "consultorio-1",
-    "title": "Consultorio cuidado",
-    "type": "Consultorio",
-    "imageUrl": "/img/stock/gallery-consultorio-1.jpg",
-    "description": "Ambiente moderno, limpio y pensado para tu comodidad."
+    "id": "antes-despues-3",
+    "title": "Antes y después - Cierre de diastemas con resina compuesta",
+    "type": "Antes y después",
+    "imageUrl": "/img/stock/Cierre de diastemas con resina compuesta.png",
+    "description": "Cierre de diastemas con resina compuesta para mejorar forma, proporción y estética."
+  },
+  {
+    "id": "antes-despues-4",
+    "title": "Antes y después - Ortodoncia en detalle",
+    "type": "Antes y después",
+    "imageUrl": "/img/stock/Ortodoncia2.png",
+    "description": "Ortodoncia en detalle para mostrar la evolución del alineamiento."
   },
   {
     "id": "consultorio-2",
-    "title": "Tecnología y detalle",
+    "title": "Consultorio",
     "type": "Consultorio",
-    "imageUrl": "/img/stock/gallery-consultorio-2.jpg",
-    "description": "Equipamiento actualizado para resultados confiables."
+    "imageUrl": "/img/stock/consultorio2.png",
+    "description": "Espacio cómodo y luminoso para tu atención."
+  },
+  {
+    "id": "consultorio-3",
+    "title": "Consultorio",
+    "type": "Consultorio",
+    "imageUrl": "/img/stock/consultorio3.png",
+    "description": "Ambiente cuidado y preparado para cada visita."
   },
   {
     "id": "atencion-1",
