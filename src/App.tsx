@@ -4,6 +4,7 @@ import services from './data/services.json'
 import gallery from './data/gallery.json'
 import testimonials from './data/testimonials.json'
 import faqs from './data/faqs.json'
+import OptimizedImage from './components/OptimizedImage'
 
 type FormState = {
   name: string
@@ -197,14 +198,14 @@ function App() {
             </div>
             <div className="relative">
               <div className="flex items-center justify-center overflow-hidden rounded-3xl bg-white p-6 shadow-soft">
-                <img
+                <OptimizedImage
                   src={site.heroImage}
                   alt="Maida Smirlian Odontología"
-                  className="h-72 w-full object-contain md:h-96"
-                  fetchPriority="high"
-                  decoding="async"
-                  width="800"
-                  height="600"
+                  className="h-72 w-full md:h-96"
+                  width={800}
+                  height={600}
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="absolute -bottom-6 left-6 max-w-xs rounded-2xl bg-white p-4 shadow-soft">
@@ -230,15 +231,16 @@ function App() {
               .sort((a, b) => a.order - b.order)
               .map((service) => (
                 <div key={service.id} className="card flex h-full flex-col">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="h-60 w-full rounded-2xl object-cover"
-                    loading="lazy"
-                    decoding="async"
-                    width="400"
-                    height="240"
-                  />
+                  <div className="h-60 w-full overflow-hidden rounded-2xl">
+                    <OptimizedImage
+                      src={service.image}
+                      alt={service.title}
+                      className="h-full w-full"
+                      width={400}
+                      height={240}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
                   <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
                   <p className="mt-3 text-sm text-slate-600">{service.description}</p>
                   <a
@@ -306,14 +308,14 @@ function App() {
                         <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
                           <div className="relative overflow-hidden rounded-2xl bg-light-gray">
                             {activeItem ? (
-                              <img
+                              <OptimizedImage
                                 src={activeItem.imageUrl}
                                 alt={activeItem.title}
                                 className="h-full w-full object-contain"
-                                loading="eager"
-                                decoding="async"
-                                width="800"
-                                height="600"
+                                width={800}
+                                height={600}
+                                priority
+                                sizes="(max-width: 1024px) 100vw, 60vw"
                               />
                             ) : null}
                             {items.length > 1 ? (
@@ -368,14 +370,13 @@ function App() {
                                       : 'border-transparent'
                                   }`}
                                 >
-                                  <img
+                                  <OptimizedImage
                                     src={item.imageUrl}
                                     alt={item.title}
-                                    className="h-20 w-full object-cover"
-                                    loading="lazy"
-                                    decoding="async"
-                                    width="120"
-                                    height="80"
+                                    className="h-20 w-full"
+                                    width={120}
+                                    height={80}
+                                    sizes="120px"
                                   />
         </button>
                               ))}
