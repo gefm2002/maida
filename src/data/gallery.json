@@ -28,18 +28,32 @@
     "description": "Ortodoncia en detalle para mostrar la evolución del alineamiento."
   },
   {
+    "id": "consultorio-1",
+    "title": "Consultorio",
+    "type": "Consultorio",
+    "imageUrl": "/img/stock/consultorio.png",
+    "description": "Espacio moderno y acogedor para tu comodidad."
+  },
+  {
     "id": "consultorio-2",
+    "title": "Consultorio",
+    "type": "Consultorio",
+    "imageUrl": "/img/stock/consultorio1.png",
+    "description": "Ambiente cuidado y preparado para cada visita."
+  },
+  {
+    "id": "consultorio-3",
     "title": "Consultorio",
     "type": "Consultorio",
     "imageUrl": "/img/stock/consultorio2.png",
     "description": "Espacio cómodo y luminoso para tu atención."
   },
   {
-    "id": "consultorio-3",
+    "id": "consultorio-4",
     "title": "Consultorio",
     "type": "Consultorio",
     "imageUrl": "/img/stock/consultorio3.png",
-    "description": "Ambiente cuidado y preparado para cada visita."
+    "description": "Instalaciones modernas pensadas para tu bienestar."
   },
   {
     "id": "atencion-1",
