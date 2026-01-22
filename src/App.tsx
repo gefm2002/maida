@@ -201,6 +201,10 @@ function App() {
                   src={site.heroImage}
                   alt="Maida Smirlian Odontología"
                   className="h-72 w-full object-contain md:h-96"
+                  fetchPriority="high"
+                  decoding="async"
+                  width="800"
+                  height="600"
                 />
               </div>
               <div className="absolute -bottom-6 left-6 max-w-xs rounded-2xl bg-white p-4 shadow-soft">
@@ -231,6 +235,9 @@ function App() {
                     alt={service.title}
                     className="h-60 w-full rounded-2xl object-cover"
                     loading="lazy"
+                    decoding="async"
+                    width="400"
+                    height="240"
                   />
                   <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
                   <p className="mt-3 text-sm text-slate-600">{service.description}</p>
@@ -303,6 +310,10 @@ function App() {
                                 src={activeItem.imageUrl}
                                 alt={activeItem.title}
                                 className="h-full w-full object-contain"
+                                loading="eager"
+                                decoding="async"
+                                width="800"
+                                height="600"
                               />
                             ) : null}
                             {items.length > 1 ? (
@@ -362,6 +373,9 @@ function App() {
                                     alt={item.title}
                                     className="h-20 w-full object-cover"
                                     loading="lazy"
+                                    decoding="async"
+                                    width="120"
+                                    height="80"
                                   />
         </button>
                               ))}
