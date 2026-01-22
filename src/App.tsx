@@ -133,6 +133,9 @@ function App() {
             <a href="#testimonios" className="transition hover:text-petrol">
               Testimonios
             </a>
+            <a href="#pagos" className="transition hover:text-petrol">
+              Medios de pago
+            </a>
             <a href="#faqs" className="transition hover:text-petrol">
               FAQs
             </a>
@@ -391,7 +394,7 @@ function App() {
           </div>
         </section>
 
-        <section id="faqs" className="bg-light-gray py-20">
+        <section id="faqs" className="mx-auto w-full max-w-6xl px-5 py-20">
           <div className="mx-auto w-full max-w-6xl px-5">
             <h2 className="section-title">Preguntas frecuentes</h2>
             <p className="section-subtitle">
@@ -410,29 +413,83 @@ function App() {
           </div>
         </section>
 
-        <section id="pagos" className="mx-auto w-full max-w-6xl px-5 py-20">
-          <h2 className="section-title">Medios de pago</h2>
-          <p className="section-subtitle">
-            Opciones flexibles para que elijas la que mejor te quede.
-          </p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              'Efectivo',
-              'Transferencia bancaria',
-              'Mercado Pago',
-              'Tarjeta de crédito',
-              'Tarjeta de débito',
-            ].map((method) => (
-              <div
-                key={method}
-                className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-white px-5 py-4 shadow-soft"
-              >
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-light-gray text-petrol">
-                  $
+        <section id="pagos" className="bg-light-gray py-20">
+          <div className="mx-auto w-full max-w-6xl px-5">
+            <h2 className="section-title">Medios de pago</h2>
+            <p className="section-subtitle">
+              Opciones flexibles para que elijas la que mejor te quede.
+            </p>
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  name: 'Efectivo',
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
+                      <path
+                        d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.38-1.9 1.38-1.39 0-2.1-.51-2.28-1.43h-2.14c.18 1.95 1.83 3.55 4.39 4.06V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  name: 'Transferencia bancaria',
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
+                      <path
+                        d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-1 9h-4v4h-4v-4H5V8h10v5z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  name: 'Mercado Pago',
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  ),
+                },
+                {
+                  name: 'Tarjeta de crédito',
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
+                      <path
+                        d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+                        fill="currentColor"
+                      />
+                      <circle cx="7" cy="14" r="1.5" fill="currentColor" />
+                    </svg>
+                  ),
+                },
+                {
+                  name: 'Tarjeta de débito',
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6">
+                      <path
+                        d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+                        fill="currentColor"
+                      />
+                      <rect x="6" y="14" width="12" height="2" rx="1" fill="currentColor" />
+                    </svg>
+                  ),
+                },
+              ].map((method) => (
+                <div
+                  key={method.name}
+                  className="card flex items-center gap-4 transition hover:shadow-lg"
+                >
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-mint-light text-petrol">
+                    {method.icon}
+                  </div>
+                  <p className="text-base font-semibold text-petrol">{method.name}</p>
                 </div>
-                <p className="text-sm font-semibold text-petrol">{method}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
 
