@@ -45,11 +45,6 @@ export default function OptimizedImage({
   const [hasError, setHasError] = useState(false)
   const paths = getImagePaths(src)
 
-  useEffect(() => {
-    // Preload placeholder para mejor UX
-    const placeholderImg = new Image()
-    placeholderImg.src = paths.placeholder
-  }, [paths.placeholder])
 
   const handleLoad = () => {
     setIsLoaded(true)
@@ -68,23 +63,14 @@ export default function OptimizedImage({
 
   return (
     <div className={`relative overflow-hidden ${className}`} style={{ width, height }}>
-      {/* Placeholder blur mientras carga */}
-      {!isLoaded && (
-        <div
-          className="absolute inset-0 bg-light-gray blur-sm"
-          style={{
-            backgroundImage: `url(${paths.placeholder})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'blur(10px)',
-            transform: 'scale(1.1)',
-          }}
-        />
+      {/* Skeleton loader simple mientras carga */}
+      {!isLoaded && !hasError && (
+        <div className="absolute inset-0 bg-gradient-to-br from-light-gray via-mint-light/30 to-light-gray animate-pulse" />
       )}
 
       {/* Imagen optimizada con WebP y srcset */}
       {useOptimized ? (
-        <picture className={isLoaded ? 'block' : 'hidden'}>
+        <picture>
           <source
             srcSet={`
               ${paths.webp.thumbnail} 120w,
@@ -114,7 +100,7 @@ export default function OptimizedImage({
             `}
             sizes={sizes}
             alt={alt}
-            className={`h-full w-full object-cover transition-opacity duration-300 ${
+            className={`h-full w-full object-cover transition-opacity duration-500 ${
               isLoaded ? 'opacity-100' : 'opacity-0'
             }`}
             width={width}
@@ -130,7 +116,7 @@ export default function OptimizedImage({
         <img
           src={paths.original}
           alt={alt}
-          className={`h-full w-full object-cover transition-opacity duration-300 ${
+          className={`h-full w-full object-cover transition-opacity duration-500 ${
             isLoaded ? 'opacity-100' : 'opacity-0'
           }`}
           width={width}
@@ -148,17 +134,12 @@ export default function OptimizedImage({
         <img
           src={paths.original}
           alt={alt}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover opacity-100"
           width={width}
           height={height}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"
         />
-      )}
-
-      {/* Skeleton loader mientras carga */}
-      {!isLoaded && !hasError && (
-        <div className="absolute inset-0 animate-pulse bg-mint-light/20" />
       )}
     </div>
   )
