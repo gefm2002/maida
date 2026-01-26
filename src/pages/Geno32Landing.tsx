@@ -300,6 +300,28 @@ export default function Geno32Landing() {
           </div>
         </section>
 
+        {/* FAQs */}
+        {geno32Data.faqs && geno32Data.faqs.length > 0 && (
+          <section className="bg-light-gray py-20">
+            <div className="mx-auto w-full max-w-6xl px-5">
+              <h2 className="section-title">Preguntas frecuentes</h2>
+              <p className="section-subtitle">
+                Respondemos las consultas más comunes sobre GENO32 y el tratamiento del sueño.
+              </p>
+              <div className="mt-10 grid gap-4 md:grid-cols-2">
+                {geno32Data.faqs.map((faq) => (
+                  <details key={faq.id} className="rounded-2xl border border-slate-100 bg-white p-5 shadow-soft">
+                    <summary className="cursor-pointer text-sm font-semibold text-petrol">
+                      {faq.question}
+                    </summary>
+                    <p className="mt-3 text-sm text-slate-600">{faq.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CTA FINAL - FORMULARIO */}
         <section className="mx-auto w-full max-w-4xl px-5 py-20">
           <div className="rounded-3xl border border-slate-100 bg-white p-8 shadow-soft md:p-12">

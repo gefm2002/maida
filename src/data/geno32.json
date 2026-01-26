@@ -1,12 +1,12 @@
 {
   "title": "GENO32",
-  "subtitle": "Dispositivo odontológico personalizado para el tratamiento del bruxismo, reducción de ronquidos y prevención de apneas del sueño",
-  "metaTitle": "GENO32 | Tratamiento de bruxismo y ronquidos | Maida Smirlian Odontología",
-  "metaDescription": "Dispositivo odontológico personalizado desarrollado por la Dra. Maida Smirlian para el tratamiento del bruxismo, reducción de ronquidos y prevención de apneas del sueño leves a moderadas.",
+  "subtitle": "Tratamiento odontológico personalizado para mejorar la calidad del sueño y la respiración nocturna",
+  "metaTitle": "GENO32 | Tratamiento para ronquidos y apnea del sueño | Maida Smirlian Odontología",
+  "metaDescription": "Dispositivo odontológico personalizado desarrollado por la Dra. Maida Smirlian para mejorar la respiración durante el sueño, reducir ronquidos y tratar apneas leves a moderadas.",
   "youtubeVideoUrl": "YOUTUBE_VIDEO_URL",
   "hero": {
-    "title": "Descanso real, respiración mejorada y salud bucal",
-    "subtitle": "GENO32 es un dispositivo odontológico personalizado que trata el bruxismo y mejora la calidad del sueño mediante el avance mandibular controlado.",
+    "title": "Dormir mejor empieza por respirar mejor",
+    "subtitle": "GENO32 es un tratamiento odontológico personalizado diseñado para mejorar tu respiración nocturna y calidad de sueño mediante avance mandibular controlado.",
     "ctaPrimary": "Quiero evaluar mi caso",
     "ctaSecondary": "Ver cómo funciona GENO32"
   },
@@ -14,81 +14,84 @@
     "title": "El problema",
     "sections": [
       {
+        "title": "Sueño interrumpido",
+        "content": "Cuando la respiración se dificulta durante la noche, el sueño se fragmenta. Te despertás sin sentirte descansado, incluso después de dormir varias horas. Esto afecta tu energía, concentración y bienestar general."
+      },
+      {
         "title": "Ronquidos",
-        "content": "Los ronquidos ocurren cuando el flujo de aire a través de la boca y la nariz se bloquea parcialmente durante el sueño. Esto puede deberse a la relajación de los músculos de la garganta, la lengua o el paladar blando."
+        "content": "Los ronquidos ocurren cuando el flujo de aire a través de la boca y la nariz se bloquea parcialmente durante el sueño. Esto puede deberse a la relajación de los músculos de la garganta, la lengua o el paladar blando, estrechando la vía aérea."
       },
       {
-        "title": "Apnea del sueño",
-        "content": "La apnea del sueño es una condición más seria donde la respiración se detiene completamente por períodos breves durante la noche. Puede ser leve, moderada o severa, y requiere evaluación médica para determinar el tratamiento adecuado."
+        "title": "Apneas del sueño",
+        "content": "La apnea del sueño es una condición donde la respiración se detiene completamente por períodos breves durante la noche. Puede ser leve, moderada o severa, y requiere evaluación médica para determinar el tratamiento adecuado. Las apneas interrumpen el sueño y reducen la oxigenación."
       },
       {
-        "title": "Relación con el bruxismo",
-        "content": "El bruxismo (rechinar o apretar los dientes) puede agravar los ronquidos y las apneas. Cuando los músculos de la mandíbula están tensos, la vía aérea puede estrecharse, dificultando la respiración durante el sueño."
-      },
-      {
-        "title": "Por qué muchos tratamientos no funcionan",
-        "content": "Los dispositivos genéricos o blandos pueden no adaptarse correctamente a tu anatomía, causar molestias o incluso agravar la actividad muscular. Sin evaluación clínica y seguimiento profesional, es difícil lograr resultados sostenibles."
+        "title": "Consecuencias diurnas",
+        "content": "La falta de descanso real se traduce en cansancio durante el día, dolor de cabeza matutino, falta de energía, dificultad para concentrarse y cambios de humor. Tu cuerpo no logra recuperarse completamente durante la noche."
       }
     ]
   },
   "whatIs": {
     "title": "Qué es GENO32",
-    "description": "GENO32 es un dispositivo intraoral personalizado fabricado en material acrílico rígido, diseñado mediante escaneo, digitalización y tecnología CAD/CAM.",
+    "description": "GENO32 es un tratamiento odontológico personalizado diseñado para mejorar la respiración durante el sueño mediante avance mandibular controlado.",
     "features": [
       {
-        "title": "Dispositivo personalizado",
-        "content": "Creado específicamente para tu anatomía mediante escaneo digital y tecnología CAD/CAM."
+        "title": "Tratamiento personalizado",
+        "content": "Creado específicamente para tu anatomía mediante escaneo digital y tecnología CAD/CAM. No es un dispositivo genérico, sino un tratamiento adaptado a tu caso."
       },
       {
-        "title": "Avance mandibular controlado",
-        "content": "Actúa adelantando la mandíbula de forma controlada, mejorando la permeabilidad de la vía aérea."
+        "title": "Mejora la respiración nocturna",
+        "content": "Actúa adelantando la mandíbula de forma controlada, manteniendo la vía aérea permeable y facilitando el flujo de aire durante el sueño."
       },
       {
-        "title": "Estabilización muscular",
-        "content": "Ayuda a estabilizar la musculatura, reduciendo la tensión y el bruxismo."
+        "title": "Reduce ronquidos y apneas",
+        "content": "Al mejorar la permeabilidad de la vía aérea, reduce los ronquidos y ayuda en el tratamiento de apneas leves a moderadas, mejorando la oxigenación durante la noche."
       },
       {
-        "title": "Material rígido",
-        "content": "Fabricado en acrílico rígido, a diferencia de dispositivos blandos, para un control más preciso y duradero."
+        "title": "Control de actividad muscular",
+        "content": "Como consecuencia del diseño y material rígido, también controla la actividad muscular asociada al bruxismo, evitando que se agrave durante el sueño."
       }
     ]
   },
   "whyDifferent": {
-    "title": "Por qué es diferente",
+    "title": "Por qué funciona",
     "comparisons": [
       {
-        "title": "Dispositivos blandos vs material rígido",
-        "content": "Los dispositivos blandos pueden deformarse con el tiempo y no ofrecen el control preciso necesario. GENO32, al ser rígido, mantiene su forma y efectividad a largo plazo."
+        "title": "Respiración más estable durante el sueño",
+        "content": "GENO32 mantiene la vía aérea abierta de forma constante, permitiendo una respiración más estable y continua durante toda la noche, sin interrupciones."
       },
       {
-        "title": "Tratamientos genéricos vs personalizados",
-        "content": "Un dispositivo genérico no se adapta a tu anatomía específica. GENO32 se diseña a partir de tu boca, asegurando un ajuste óptimo y mayor comodidad."
+        "title": "Mejor oxigenación y menos microdespertares",
+        "content": "Al facilitar el flujo de aire, mejora la oxigenación y reduce los microdespertares que fragmentan el sueño. Esto permite alcanzar fases de descanso más profundas y reparadoras."
       },
       {
-        "title": "Venta online vs evaluación clínica",
-        "content": "GENO32 no es un producto que se compra online. Requiere evaluación clínica, estudios cuando corresponda, y seguimiento profesional para garantizar resultados seguros y efectivos."
+        "title": "Material rígido vs dispositivos blandos",
+        "content": "A diferencia de placas blandas que solo protegen los dientes, el material rígido de GENO32 permite un control preciso del avance mandibular y también controla el bruxismo de forma efectiva."
       }
     ],
     "emphasis": [
-      "Criterio odontológico profesional",
-      "Seguimiento cercano durante todo el tratamiento",
-      "Diseño basado en tu anatomía específica"
+      "Respiración más estable durante el sueño",
+      "Mejor oxigenación y descanso más profundo",
+      "Diseño personalizado basado en tu anatomía específica",
+      "Evaluación y seguimiento profesional en cada etapa"
     ]
   },
   "whoIsFor": {
-    "title": "Para quién sí / Para quién no",
+    "title": "Para quién es / Para quién no",
     "forWho": [
-      "Personas con bruxismo que afecta su descanso",
-      "Quienes roncan de forma frecuente y buscan una solución",
-      "Pacientes con apneas del sueño leves a moderadas (bajo indicación médica)",
-      "Quienes buscan un tratamiento personalizado y con seguimiento profesional"
+      "Personas que roncan de forma frecuente y buscan una solución",
+      "Quienes tienen sueño no reparador y se despiertan cansados",
+      "Pacientes con apnea del sueño leve a moderada (bajo indicación médica)",
+      "Personas que no toleran otros tratamientos o dispositivos",
+      "Quienes ya usan placa de bruxismo: GENO32 también cubre el tratamiento del bruxismo, no es necesario usar dos dispositivos. Se evalúa cada caso clínicamente."
     ],
     "notForWho": [
       "No reemplaza estudios médicos cuando la apnea es severa",
       "No es adecuado sin evaluación clínica previa",
-      "No es un producto de venta libre o automedicación"
+      "No es un producto de venta libre o automedicación",
+      "No reemplaza otros tratamientos cuando la evaluación médica lo indica"
     ],
-    "note": "Cada caso es único. La evaluación clínica determina si GENO32 es adecuado para vos."
+    "note": "Cada caso es único. La evaluación clínica determina si GENO32 es adecuado para vos y si puede complementar o reemplazar otros tratamientos."
   },
   "process": {
     "title": "Proceso de atención",
@@ -96,28 +99,28 @@
       {
         "step": 1,
         "title": "Evaluación clínica",
-        "content": "Consulta en el consultorio donde evaluamos tu caso, síntomas y anatomía bucal."
+        "content": "Consulta en el consultorio donde evaluamos tu caso, síntomas respiratorios durante el sueño y anatomía bucal. Analizamos tu historial y necesidades específicas."
       },
       {
         "step": 2,
         "title": "Estudios necesarios",
-        "content": "Si corresponde, indicamos estudios complementarios para determinar el tratamiento adecuado."
+        "content": "Si corresponde, indicamos estudios complementarios (como polisomnografía o evaluación respiratoria) para determinar el tratamiento adecuado y la severidad del caso."
       },
       {
         "step": 3,
         "title": "Diseño personalizado",
-        "content": "Mediante escaneo digital y tecnología CAD/CAM, diseñamos tu dispositivo específico."
+        "content": "Mediante escaneo digital y tecnología CAD/CAM, diseñamos tu tratamiento específico adaptado a tu anatomía y necesidades respiratorias."
       },
       {
         "step": 4,
         "title": "Adaptación y seguimiento",
-        "content": "Te entregamos el dispositivo y te acompañamos en la adaptación, con controles periódicos para ajustar y evaluar resultados."
+        "content": "Te entregamos el dispositivo y te acompañamos en la adaptación, con controles periódicos para ajustar, evaluar resultados y monitorear la mejora en tu calidad de sueño."
       }
     ]
   },
   "form": {
-    "title": "Evaluá tu caso",
-    "subtitle": "Completá el formulario y te contactamos por WhatsApp para coordinar una evaluación.",
+    "title": "Quiero dormir mejor",
+    "subtitle": "Completá el formulario y te contactamos por WhatsApp para coordinar una evaluación de tu respiración durante el sueño.",
     "fields": {
       "name": "Nombre y apellido",
       "phone": "Teléfono",
@@ -127,10 +130,43 @@
     "symptoms": [
       "Ronquidos",
       "Apnea del sueño",
-      "Bruxismo",
+      "Sueño no reparador / cansancio diurno",
+      "Ya uso placa de bruxismo y quiero evaluar GENO32",
       "Combinación de los anteriores"
     ],
-    "ctaLabel": "Enviar consulta",
+    "ctaLabel": "Quiero evaluar mi respiración durante el sueño",
     "whatsappMessageTemplate": "Hola, quiero evaluar mi caso para el tratamiento GENO32. Mis síntomas son {sintoma}. Mi barrio es {barrio}. Mi teléfono es {telefono}."
-  }
+  },
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "¿Sirve si ya uso una placa de bruxismo?",
+      "answer": "Sí. GENO32 también controla el bruxismo, pero está diseñado principalmente para mejorar el sueño y la respiración. Se evalúa clínicamente si puede reemplazar tu placa actual o si necesitás ambos tratamientos. En muchos casos, un solo dispositivo cubre ambas necesidades."
+    },
+    {
+      "id": "faq-2",
+      "question": "¿Es solo para ronquidos?",
+      "answer": "No. GENO32 está diseñado para mejorar la calidad del sueño y la respiración nocturna. Trata ronquidos, apnea del sueño leve a moderada, y como beneficio secundario también controla el bruxismo. El objetivo principal es que respires mejor durante la noche."
+    },
+    {
+      "id": "faq-3",
+      "question": "¿Reemplaza otros tratamientos para apnea?",
+      "answer": "No siempre. Depende de la severidad de tu caso y de la evaluación médica. Para apneas leves a moderadas, GENO32 puede ser una alternativa efectiva. Para casos severos, puede complementar otros tratamientos o requerirse un enfoque diferente. La evaluación clínica determina la mejor opción."
+    },
+    {
+      "id": "faq-4",
+      "question": "¿Cuánto tiempo tarda en hacer efecto?",
+      "answer": "La adaptación varía según cada persona. Generalmente, los primeros efectos en la respiración y calidad de sueño se notan en las primeras semanas de uso. El seguimiento profesional permite ajustar el dispositivo y optimizar los resultados."
+    },
+    {
+      "id": "faq-5",
+      "question": "¿Necesito estudios previos?",
+      "answer": "Depende de tu caso. Si tenés síntomas de apnea del sueño, puede ser necesario realizar una polisomnografía u otros estudios para evaluar la severidad. La evaluación clínica inicial determina qué estudios son necesarios."
+    },
+    {
+      "id": "faq-6",
+      "question": "¿Duele o es incómodo?",
+      "answer": "El dispositivo está diseñado para ser cómodo y adaptarse a tu anatomía. Durante los primeros días puede haber un período de adaptación, pero el diseño personalizado minimiza las molestias. El seguimiento profesional permite ajustar cualquier incomodidad."
+    }
+  ]
 }
