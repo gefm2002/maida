@@ -1,0 +1,136 @@
+{
+  "title": "GENO32",
+  "subtitle": "Dispositivo odontológico personalizado para el tratamiento del bruxismo, reducción de ronquidos y prevención de apneas del sueño",
+  "metaTitle": "GENO32 | Tratamiento de bruxismo y ronquidos | Maida Smirlian Odontología",
+  "metaDescription": "Dispositivo odontológico personalizado desarrollado por la Dra. Maida Smirlian para el tratamiento del bruxismo, reducción de ronquidos y prevención de apneas del sueño leves a moderadas.",
+  "youtubeVideoUrl": "YOUTUBE_VIDEO_URL",
+  "hero": {
+    "title": "Descanso real, respiración mejorada y salud bucal",
+    "subtitle": "GENO32 es un dispositivo odontológico personalizado que trata el bruxismo y mejora la calidad del sueño mediante el avance mandibular controlado.",
+    "ctaPrimary": "Quiero evaluar mi caso",
+    "ctaSecondary": "Ver cómo funciona GENO32"
+  },
+  "problem": {
+    "title": "El problema",
+    "sections": [
+      {
+        "title": "Ronquidos",
+        "content": "Los ronquidos ocurren cuando el flujo de aire a través de la boca y la nariz se bloquea parcialmente durante el sueño. Esto puede deberse a la relajación de los músculos de la garganta, la lengua o el paladar blando."
+      },
+      {
+        "title": "Apnea del sueño",
+        "content": "La apnea del sueño es una condición más seria donde la respiración se detiene completamente por períodos breves durante la noche. Puede ser leve, moderada o severa, y requiere evaluación médica para determinar el tratamiento adecuado."
+      },
+      {
+        "title": "Relación con el bruxismo",
+        "content": "El bruxismo (rechinar o apretar los dientes) puede agravar los ronquidos y las apneas. Cuando los músculos de la mandíbula están tensos, la vía aérea puede estrecharse, dificultando la respiración durante el sueño."
+      },
+      {
+        "title": "Por qué muchos tratamientos no funcionan",
+        "content": "Los dispositivos genéricos o blandos pueden no adaptarse correctamente a tu anatomía, causar molestias o incluso agravar la actividad muscular. Sin evaluación clínica y seguimiento profesional, es difícil lograr resultados sostenibles."
+      }
+    ]
+  },
+  "whatIs": {
+    "title": "Qué es GENO32",
+    "description": "GENO32 es un dispositivo intraoral personalizado fabricado en material acrílico rígido, diseñado mediante escaneo, digitalización y tecnología CAD/CAM.",
+    "features": [
+      {
+        "title": "Dispositivo personalizado",
+        "content": "Creado específicamente para tu anatomía mediante escaneo digital y tecnología CAD/CAM."
+      },
+      {
+        "title": "Avance mandibular controlado",
+        "content": "Actúa adelantando la mandíbula de forma controlada, mejorando la permeabilidad de la vía aérea."
+      },
+      {
+        "title": "Estabilización muscular",
+        "content": "Ayuda a estabilizar la musculatura, reduciendo la tensión y el bruxismo."
+      },
+      {
+        "title": "Material rígido",
+        "content": "Fabricado en acrílico rígido, a diferencia de dispositivos blandos, para un control más preciso y duradero."
+      }
+    ]
+  },
+  "whyDifferent": {
+    "title": "Por qué es diferente",
+    "comparisons": [
+      {
+        "title": "Dispositivos blandos vs material rígido",
+        "content": "Los dispositivos blandos pueden deformarse con el tiempo y no ofrecen el control preciso necesario. GENO32, al ser rígido, mantiene su forma y efectividad a largo plazo."
+      },
+      {
+        "title": "Tratamientos genéricos vs personalizados",
+        "content": "Un dispositivo genérico no se adapta a tu anatomía específica. GENO32 se diseña a partir de tu boca, asegurando un ajuste óptimo y mayor comodidad."
+      },
+      {
+        "title": "Venta online vs evaluación clínica",
+        "content": "GENO32 no es un producto que se compra online. Requiere evaluación clínica, estudios cuando corresponda, y seguimiento profesional para garantizar resultados seguros y efectivos."
+      }
+    ],
+    "emphasis": [
+      "Criterio odontológico profesional",
+      "Seguimiento cercano durante todo el tratamiento",
+      "Diseño basado en tu anatomía específica"
+    ]
+  },
+  "whoIsFor": {
+    "title": "Para quién sí / Para quién no",
+    "forWho": [
+      "Personas con bruxismo que afecta su descanso",
+      "Quienes roncan de forma frecuente y buscan una solución",
+      "Pacientes con apneas del sueño leves a moderadas (bajo indicación médica)",
+      "Quienes buscan un tratamiento personalizado y con seguimiento profesional"
+    ],
+    "notForWho": [
+      "No reemplaza estudios médicos cuando la apnea es severa",
+      "No es adecuado sin evaluación clínica previa",
+      "No es un producto de venta libre o automedicación"
+    ],
+    "note": "Cada caso es único. La evaluación clínica determina si GENO32 es adecuado para vos."
+  },
+  "process": {
+    "title": "Proceso de atención",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Evaluación clínica",
+        "content": "Consulta en el consultorio donde evaluamos tu caso, síntomas y anatomía bucal."
+      },
+      {
+        "step": 2,
+        "title": "Estudios necesarios",
+        "content": "Si corresponde, indicamos estudios complementarios para determinar el tratamiento adecuado."
+      },
+      {
+        "step": 3,
+        "title": "Diseño personalizado",
+        "content": "Mediante escaneo digital y tecnología CAD/CAM, diseñamos tu dispositivo específico."
+      },
+      {
+        "step": 4,
+        "title": "Adaptación y seguimiento",
+        "content": "Te entregamos el dispositivo y te acompañamos en la adaptación, con controles periódicos para ajustar y evaluar resultados."
+      }
+    ]
+  },
+  "form": {
+    "title": "Evaluá tu caso",
+    "subtitle": "Completá el formulario y te contactamos por WhatsApp para coordinar una evaluación.",
+    "fields": {
+      "name": "Nombre y apellido",
+      "phone": "Teléfono",
+      "area": "Barrio / ciudad",
+      "symptom": "Síntoma principal"
+    },
+    "symptoms": [
+      "Ronquidos",
+      "Apnea del sueño",
+      "Bruxismo",
+      "Combinación de los anteriores"
+    ],
+    "ctaLabel": "Enviar consulta",
+    "whatsappMessageTemplate": "Hola, quiero evaluar mi caso para el tratamiento GENO32. Mis síntomas son {sintoma}. Mi barrio es {barrio}. Mi teléfono es {telefono}."
+  }
+}
