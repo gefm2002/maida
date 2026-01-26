@@ -221,6 +221,24 @@ export default function Geno32Landing() {
           </div>
         </section>
 
+        {/* SEGURIDAD */}
+        {geno32Data.safety && (
+          <section className="mx-auto w-full max-w-6xl px-5 py-20">
+            <h2 className="section-title">{geno32Data.safety.title}</h2>
+            <p className="section-subtitle">{geno32Data.safety.description}</p>
+            <div className="mt-8 rounded-3xl border border-slate-100 bg-white p-8 shadow-soft">
+              <ul className="space-y-3">
+                {geno32Data.safety.points.map((point, index) => (
+                  <li key={index} className="flex items-start gap-3 text-sm text-slate-600">
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-mint-dark" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
+
         {/* POR QUÉ ES DIFERENTE */}
         <section className="bg-light-gray py-20">
           <div className="mx-auto w-full max-w-6xl px-5">
