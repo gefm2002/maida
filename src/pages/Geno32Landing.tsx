@@ -1,4 +1,4 @@
-import { type FormEvent, useState, useEffect } from 'react'
+import { type FormEvent, useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import site from '../data/site.json'
 import geno32Data from '../data/geno32.json'
@@ -60,6 +60,7 @@ export default function Geno32Landing() {
     phone: '',
     email: '',
   })
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   // Agregar meta noindex
   useEffect(() => {
@@ -77,6 +78,37 @@ export default function Geno32Landing() {
     const metaDescription = document.querySelector('meta[name="description"]')
     if (metaDescription) {
       metaDescription.setAttribute('content', geno32Data.metaDescription)
+    }
+  }, [])
+
+  // Autoplay cuando el video entra en viewport
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Cuando el video entra en viewport, reproducir
+            video.play().catch(() => {
+              // Si falla el autoplay (por políticas del navegador), no hacer nada
+            })
+          } else {
+            // Cuando sale del viewport, pausar
+            video.pause()
+          }
+        })
+      },
+      {
+        threshold: 0.5, // Se activa cuando el 50% del video es visible
+      },
+    )
+
+    observer.observe(video)
+
+    return () => {
+      observer.disconnect()
     }
   }, [])
 
@@ -200,9 +232,13 @@ export default function Geno32Landing() {
             </h2>
             <div className="mt-8 aspect-video overflow-hidden rounded-3xl bg-slate-100 shadow-soft">
               <video
+                ref={videoRef}
                 className="h-full w-full"
                 controls
-                preload="metadata"
+                autoPlay
+                muted
+                loop
+                preload="auto"
                 poster="/img/video/geno32-poster.jpg"
                 playsInline
               >
