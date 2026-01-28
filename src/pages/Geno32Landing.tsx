@@ -527,9 +527,6 @@ export default function Geno32Landing() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
           <div className="w-full max-w-md rounded-3xl bg-white p-6 shadow-soft">
             <h3 className="text-lg font-semibold text-petrol">Completá tus datos</h3>
-            <p className="mt-2 text-sm text-slate-600">
-              Necesitamos algunos datos para armar tu mensaje de WhatsApp.
-            </p>
             <form onSubmit={handleWhatsAppModalSubmit} className="mt-6 space-y-4">
               <label className="text-sm font-semibold text-petrol">
                 Nombre y apellido
