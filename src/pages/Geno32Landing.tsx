@@ -199,25 +199,25 @@ export default function Geno32Landing() {
               Presentación clínica del dispositivo GENO32
             </h2>
             <div className="mt-8 aspect-video overflow-hidden rounded-3xl bg-slate-100 shadow-soft">
-              {geno32Data.youtubeVideoUrl !== 'YOUTUBE_VIDEO_URL' ? (
-                <iframe
-                  className="h-full w-full"
-                  src={`https://www.youtube.com/embed/${geno32Data.youtubeVideoUrl.replace(
-                    /^.*(?:youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/,
-                    '$1',
-                  )}`}
-                  title="Presentación clínica GENO32"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              ) : (
-                <div className="flex h-full items-center justify-center text-slate-500">
-                  <p className="text-center">
-                    Video de YouTube<br />
-                    (URL pendiente de configuración)
-                  </p>
-                </div>
-              )}
+              <video
+                className="h-full w-full"
+                controls
+                preload="metadata"
+                poster="/img/video/geno32-poster.jpg"
+                playsInline
+              >
+                {/* Versión WebM (mejor compresión, usar primero si está disponible) */}
+                <source src="/img/video/geno32.webm" type="video/webm" />
+                {/* Versión optimizada MP4 (fallback principal) */}
+                <source src="/img/video/geno32-optimized.mp4" type="video/mp4" />
+                {/* Versión móvil (para dispositivos con poco ancho de banda) */}
+                <source src="/img/video/geno32-mobile.mp4" type="video/mp4" media="(max-width: 768px)" />
+                {/* Fallback al video original si no hay versiones optimizadas */}
+                <source src="/img/gen32v2.mp4" type="video/mp4" />
+                <p className="flex h-full items-center justify-center text-slate-500">
+                  Tu navegador no soporta la reproducción de video.
+                </p>
+              </video>
             </div>
           </div>
         </section>
