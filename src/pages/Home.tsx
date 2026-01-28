@@ -254,26 +254,40 @@ function App() {
                     )}
                   </div>
                   <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
-                  <p className="mt-3 text-sm text-slate-600">{service.description}</p>
-                  {service.id === 'geno32' && service.landingUrl ? (
-                    <Link
-                      to={service.landingUrl}
-                      className="btn-secondary mt-8 self-start lg:mt-auto"
-                    >
-                      {service.ctaLabel}
-                    </Link>
-                  ) : (
-                    <a
-                      className="btn-secondary mt-8 self-start lg:mt-auto"
-                      href={buildWhatsAppLink(service.ctaMessage)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => handleServiceClick(service)}
-                    >
-                      <WhatsAppIcon className="h-4 w-4" />
-                      {service.ctaLabel}
-                    </a>
-                  )}
+                  <p className="mt-3 mb-6 text-sm text-slate-600">{service.description}</p>
+                  <div className="mt-auto flex flex-col gap-3">
+                    {service.id === 'geno32' && service.landingUrl ? (
+                      <>
+                        <Link
+                          to={service.landingUrl}
+                          className="btn-secondary self-start"
+                        >
+                          {service.ctaLabel}
+                        </Link>
+                        <a
+                          className="btn-secondary self-start"
+                          href={buildWhatsAppLink(service.ctaMessage)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => handleServiceClick(service)}
+                        >
+                          <WhatsAppIcon className="h-4 w-4" />
+                          Consultar por GENO32
+                        </a>
+                      </>
+                    ) : (
+                      <a
+                        className="btn-secondary self-start"
+                        href={buildWhatsAppLink(service.ctaMessage)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => handleServiceClick(service)}
+                      >
+                        <WhatsAppIcon className="h-4 w-4" />
+                        {service.ctaLabel}
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
           </div>
