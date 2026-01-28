@@ -122,11 +122,11 @@ export default function Geno32Landing() {
         <section className="bg-light-gray">
           <div className="mx-auto w-full max-w-6xl px-5 py-20 md:py-28">
             <div className="mx-auto max-w-3xl text-center">
-              <div className="mb-8 flex justify-center">
+              <div className="mb-10 flex justify-center">
                 <img
                   src="/img/geno32/geno32.png"
                   alt="GENO32 - Tu dispositivo de descanso"
-                  className="h-20 w-auto md:h-28"
+                  className="h-28 w-auto md:h-36"
                 />
               </div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-mint-dark">
