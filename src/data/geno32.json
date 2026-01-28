@@ -1,12 +1,12 @@
 {
   "title": "GENO32",
-  "subtitle": "Tratamiento odontológico personalizado para mejorar la calidad del sueño y la respiración nocturna",
-  "metaTitle": "GENO32 | Tratamiento para ronquidos y apnea del sueño | Maida Smirlian Odontología",
+  "subtitle": "Dispositivo odontológico personalizado para mejorar la calidad del sueño y la respiración nocturna",
+  "metaTitle": "GENO32 | Dispositivo para ronquidos y apnea del sueño | Maida Smirlian Odontología",
   "metaDescription": "Dispositivo odontológico personalizado desarrollado por la Dra. Maida Smirlian para mejorar la respiración durante el sueño, reducir ronquidos y tratar apneas leves a moderadas mediante adelantamiento mandibular controlado.",
   "youtubeVideoUrl": "YOUTUBE_VIDEO_URL",
   "hero": {
-    "title": "Un tratamiento odontológico para mejorar la respiración durante el sueño",
-    "subtitle": "Dormir mejor empieza por respirar mejor. GENO32 es un tratamiento personalizado que mejora la calidad del sueño mediante el adelantamiento mandibular controlado, reduciendo ronquidos y apneas leves a moderadas.",
+    "title": "Un dispositivo odontológico para mejorar la respiración durante el sueño",
+    "subtitle": "Dormir mejor empieza por respirar mejor. GENO32 es un dispositivo personalizado que mejora la calidad del sueño mediante el adelantamiento mandibular controlado, reduciendo ronquidos y apneas leves a moderadas.",
     "ctaPrimary": "Quiero evaluar mi caso",
     "ctaSecondary": "Ver cómo funciona GENO32"
   },
@@ -54,7 +54,7 @@
     ]
   },
   "safety": {
-    "title": "Seguridad del tratamiento",
+    "title": "Seguridad del dispositivo",
     "description": "El dispositivo no daña la articulación temporomandibular porque el movimiento de adelantamiento es medido, progresivo e individual.",
     "points": [
       "El adelantamiento mandibular es controlado y personalizado para cada paciente",
@@ -93,7 +93,7 @@
       "Quienes tienen sueño no reparador y se despiertan cansados",
       "Pacientes con apnea del sueño leve a moderada (bajo indicación médica)",
       "Personas que no toleran otros tratamientos o dispositivos",
-      "Quienes ya usan placa de bruxismo: GENO32 también cubre el tratamiento del bruxismo como beneficio integrado, no es necesario usar dos dispositivos. Se evalúa cada caso clínicamente."
+      "Quienes ya usan placa de bruxismo: GENO32 también cubre el dispositivo para bruxismo como beneficio integrado, no es necesario usar dos dispositivos. Se evalúa cada caso clínicamente."
     ],
     "notForWho": [
       "No reemplaza estudios médicos cuando la apnea es severa",
@@ -114,12 +114,12 @@
       {
         "step": 2,
         "title": "Estudios necesarios",
-        "content": "Si corresponde, indicamos estudios complementarios (como polisomnografía o evaluación respiratoria) para determinar el tratamiento adecuado, la severidad del caso y los parámetros de adelantamiento necesarios."
+        "content": "Si corresponde, indicamos estudios complementarios (como polisomnografía o evaluación respiratoria) para determinar el dispositivo adecuado, la severidad del caso y los parámetros de adelantamiento necesarios."
       },
       {
         "step": 3,
         "title": "Diseño personalizado",
-        "content": "Mediante escaneo digital y tecnología CAD/CAM, diseñamos tu tratamiento específico adaptado a tu anatomía. El adelantamiento mandibular se define de forma controlada y personalizada para tu caso."
+        "content": "Mediante escaneo digital y tecnología CAD/CAM, diseñamos tu dispositivo específico adaptado a tu anatomía. El adelantamiento mandibular se define de forma controlada y personalizada para tu caso."
       },
       {
         "step": 4,
@@ -145,7 +145,7 @@
       "Combinación de los anteriores"
     ],
     "ctaLabel": "Quiero evaluar mi respiración durante el sueño",
-    "whatsappMessageTemplate": "Hola, quiero evaluar mi caso para el tratamiento GENO32. Mis síntomas son {sintoma}. Mi barrio es {barrio}. Mi teléfono es {telefono}."
+    "whatsappMessageTemplate": "Hola, quiero evaluar mi caso para el dispositivo GENO32. Mis síntomas son {sintoma}. Mi barrio es {barrio}. Mi teléfono es {telefono}."
   },
   "faqs": [
     {

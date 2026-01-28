@@ -170,7 +170,7 @@ export default function Geno32Landing() {
               Presentación clínica
             </p>
             <h2 className="section-title mt-2 text-center">
-              Presentación clínica del tratamiento GENO32
+              Presentación clínica del dispositivo GENO32
             </h2>
             <div className="mt-8 aspect-video overflow-hidden rounded-3xl bg-slate-100 shadow-soft">
               {geno32Data.youtubeVideoUrl !== 'YOUTUBE_VIDEO_URL' ? (
