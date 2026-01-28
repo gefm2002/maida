@@ -248,7 +248,7 @@ export default function Geno32Landing() {
                 {/* Versión móvil (para dispositivos con poco ancho de banda) */}
                 <source src="/img/video/geno32-mobile.mp4" type="video/mp4" media="(max-width: 768px)" />
                 {/* Fallback al video original si no hay versiones optimizadas */}
-                <source src="/img/gen32v2.mp4" type="video/mp4" />
+                <source src="/img/geno32v3.mp4" type="video/mp4" />
                 <p className="flex h-full items-center justify-center text-slate-500">
                   Tu navegador no soporta la reproducción de video.
                 </p>

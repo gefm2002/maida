@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-const inputVideo = join(__dirname, '../public/img/gen32v2.mp4')
+const inputVideo = join(__dirname, '../public/img/geno32v3.mp4')
 const outputDir = join(__dirname, '../public/img/video')
 
 // Verificar si ffmpeg está instalado
