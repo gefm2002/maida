@@ -151,42 +151,52 @@
     {
       "id": "faq-1",
       "question": "¿El dispositivo daña la articulación?",
-      "answer": "No. El dispositivo no daña la articulación temporomandibular porque el movimiento de adelantamiento es medido, progresivo e individual. Se define específicamente para cada paciente según su anatomía, no es un movimiento forzado ni abrupto. Esto lo diferencia de dispositivos genéricos que no consideran tu caso particular."
+      "answer": "No. GENO32 no daña la articulación temporomandibular porque el adelantamiento mandibular se define de forma personalizada y controlada para cada paciente. La posición se establece dentro de un rango funcional y estable para la articulación, no es forzada ni abrupta. Justamente por eso requiere evaluación profesional y ajustes progresivos según cada anatomía."
     },
     {
       "id": "faq-2",
       "question": "¿En qué se diferencia de dispositivos genéricos?",
-      "answer": "Los dispositivos universales suelen ser blandos y no controlan el adelantamiento mandibular de forma precisa. GENO32 es rígido, personalizado mediante escaneo digital y tecnología CAD/CAM, y controla el movimiento mandibular de forma medida y específica para tu caso. Esto permite canalizar la vía aérea de forma efectiva y mejorar la respiración durante el sueño."
+      "answer": "Los dispositivos genéricos suelen ser universales, blandos y sin control preciso del adelantamiento mandibular. GENO32 es un dispositivo rígido y personalizado, diseñado a partir de modelos individuales, que permite controlar el adelantamiento de forma medida y específica. Esto posibilita canalizar la vía aérea de manera efectiva y mejorar la respiración durante el sueño."
     },
     {
       "id": "faq-3",
       "question": "¿Sirve si ya uso una placa de bruxismo?",
-      "answer": "Sí. GENO32 también controla el bruxismo como beneficio integrado, con foco principal en mejorar la respiración durante el sueño. Se evalúa clínicamente si puede reemplazar tu placa actual o si necesitás ambos tratamientos. En muchos casos, un solo dispositivo cubre ambas necesidades: mejora la respiración nocturna y controla la actividad muscular del bruxismo."
+      "answer": "Sí. GENO32 también controla el bruxismo como beneficio integrado, aunque su foco principal es mejorar la respiración durante el sueño. Durante la evaluación clínica se determina si el dispositivo puede reemplazar la placa actual o si es necesario algún abordaje complementario. En muchos casos, un solo dispositivo cubre ambas necesidades: mejora la respiración nocturna y controla la actividad muscular del bruxismo."
     },
     {
       "id": "faq-4",
       "question": "¿El bruxismo causa apnea?",
-      "answer": "No. El bruxismo no causa ronquidos ni apneas. Sin embargo, puede agravarlos y volverlos más frecuentes. Al controlar la actividad muscular del bruxismo, se mejora indirectamente el cuadro respiratorio, reduciendo un factor que complica la respiración durante el sueño. GENO32 aborda ambos aspectos de forma integrada."
+      "answer": "No. El bruxismo no causa ronquidos ni apnea del sueño. Sin embargo, puede agravarlos o volverlos más frecuentes. Al controlar la actividad muscular asociada al bruxismo, se reduce un factor que complica la respiración nocturna, mejorando indirectamente el cuadro respiratorio. GENO32 aborda ambos aspectos de forma integrada."
     },
     {
       "id": "faq-5",
       "question": "¿Es solo para ronquidos?",
-      "answer": "No. GENO32 está diseñado para mejorar la calidad del sueño y la respiración nocturna. Trata ronquidos, apnea del sueño leve a moderada mediante adelantamiento mandibular controlado, y como beneficio secundario también controla el bruxismo. El objetivo principal es que respires mejor durante la noche."
+      "answer": "No. GENO32 está diseñado para mejorar la calidad del sueño y la respiración nocturna. Se utiliza en casos de ronquidos y apnea del sueño leve a moderada mediante un adelantamiento mandibular controlado. Como beneficio secundario, también contribuye al control del bruxismo. El objetivo principal es que respires mejor durante la noche."
     },
     {
       "id": "faq-6",
-      "question": "¿Reemplaza otros tratamientos para apnea?",
-      "answer": "Depende de la severidad de tu caso y de la evaluación médica. Para apneas leves a moderadas, GENO32 puede ser una alternativa efectiva mediante el adelantamiento mandibular controlado. Para casos severos, puede complementar otros tratamientos o requerirse un enfoque diferente. La evaluación clínica determina la mejor opción."
+      "question": "¿Reemplaza otros tratamientos para la apnea?",
+      "answer": "Depende de cada caso y de la evaluación clínica. En apneas leves a moderadas, GENO32 puede ser una alternativa efectiva. En casos más severos, puede complementar otros tratamientos o requerirse un enfoque diferente. La indicación adecuada surge siempre de una evaluación profesional."
     },
     {
       "id": "faq-7",
-      "question": "¿Cuánto tiempo tarda en hacer efecto?",
-      "answer": "La adaptación varía según cada persona. Generalmente, los primeros efectos en la respiración y calidad de sueño se notan en las primeras semanas de uso. El seguimiento profesional permite ajustar el dispositivo y optimizar los resultados del adelantamiento mandibular."
+      "question": "¿Cuánto tiempo tarda en hacerse el dispositivo?",
+      "answer": "El tratamiento se realiza generalmente en dos sesiones. En la primera se toman los modelos y los datos necesarios para personalizar el dispositivo. En la segunda sesión se realiza la instalación y ajuste inicial. El tiempo de confección suele ser de aproximadamente una a dos semanas, dependiendo de cada caso."
     },
     {
       "id": "faq-8",
+      "question": "¿La mandíbula queda en una posición fija que puede generar problemas?",
+      "answer": "No. La posición mandibular que se utiliza es personalizada y funcional, definida para cada paciente dentro de un rango estable y tolerable para la articulación. Además, el dispositivo permite ajustes progresivos, lo que evita sobrecargas y asegura una adaptación segura en el tiempo."
+    },
+    {
+      "id": "faq-9",
+      "question": "¿Cómo actúa el dispositivo sobre la respiración?",
+      "answer": "Al adelantar la mandíbula de forma controlada, GENO32 mantiene la vía aérea permeable durante el sueño. Esto reduce el colapso que se produce cuando la lengua desciende y obstruye el paso del aire. Al mejorar el flujo aéreo, el sistema respiratorio trabaja con menos esfuerzo y se favorece un descanso más estable y reparador."
+    },
+    {
+      "id": "faq-10",
       "question": "¿Necesito estudios previos?",
-      "answer": "Depende de tu caso. Si tenés síntomas de apnea del sueño, puede ser necesario realizar una polisomnografía u otros estudios para evaluar la severidad y determinar los parámetros de adelantamiento mandibular necesarios. La evaluación clínica inicial determina qué estudios son necesarios."
+      "answer": "Depende de tu caso. Si hay síntomas compatibles con apnea del sueño, puede ser necesario realizar estudios como una polisomnografía u otras evaluaciones para determinar la severidad y definir el tratamiento más adecuado. La evaluación clínica inicial permite decidir qué estudios son necesarios."
     }
   ]
 }
