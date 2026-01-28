@@ -54,6 +54,12 @@ export default function Geno32Landing() {
     area: '',
     symptom: '',
   })
+  const [showWhatsAppModal, setShowWhatsAppModal] = useState(false)
+  const [whatsAppModalData, setWhatsAppModalData] = useState({
+    name: '',
+    phone: '',
+    area: '',
+  })
 
   // Agregar meta noindex
   useEffect(() => {
@@ -81,8 +87,28 @@ export default function Geno32Landing() {
     window.open(buildWhatsAppLink(message), '_blank', 'noopener,noreferrer')
   }
 
-  const handleWhatsAppClick = (label: string) => {
+  const handleWhatsAppClick = (label: string, message?: string) => {
     trackEvent('whatsapp_click', label)
+    if (message && message.includes('{nombre}')) {
+      // Si el mensaje tiene variables, mostrar modal
+      setShowWhatsAppModal(true)
+      setWhatsAppModalData({ name: '', phone: '', area: '' })
+    } else {
+      // Si no tiene variables, abrir directamente
+      window.open(buildWhatsAppLink(message || site.whatsappDefaultMessage), '_blank', 'noopener,noreferrer')
+    }
+  }
+
+  const handleWhatsAppModalSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const message = site.whatsappDefaultMessage
+      .replace('{nombre}', whatsAppModalData.name)
+      .replace('{barrio}', whatsAppModalData.area)
+      .replace('{telefono}', whatsAppModalData.phone)
+    trackEvent('whatsapp_click', 'geno32_modal')
+    window.open(buildWhatsAppLink(message), '_blank', 'noopener,noreferrer')
+    setShowWhatsAppModal(false)
+    setWhatsAppModalData({ name: '', phone: '', area: '' })
   }
 
   return (
@@ -104,16 +130,14 @@ export default function Geno32Landing() {
               Contacto
             </Link>
           </nav>
-          <a
+          <button
             className="btn-primary"
-            href={buildWhatsAppLink(site.whatsappDefaultMessage)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => handleWhatsAppClick('header')}
+            type="button"
+            onClick={() => handleWhatsAppClick('header', site.whatsappDefaultMessage)}
           >
             <WhatsAppIcon className="h-4 w-4" />
             {site.ctaWhatsAppLabel}
-          </a>
+          </button>
         </div>
       </header>
 
@@ -139,18 +163,14 @@ export default function Geno32Landing() {
                 {geno32Data.hero.subtitle}
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
-                <a
+                <button
                   className="btn-primary"
-                  href={buildWhatsAppLink(
-                    `Hola, quiero evaluar mi caso para el tratamiento GENO32.`,
-                  )}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => handleWhatsAppClick('hero_primary')}
+                  type="button"
+                  onClick={() => handleWhatsAppClick('hero_primary', site.whatsappDefaultMessage)}
                 >
                   <WhatsAppIcon className="h-4 w-4" />
                   {geno32Data.hero.ctaPrimary}
-                </a>
+                </button>
                 <button
                   type="button"
                   className="btn-secondary"
@@ -429,16 +449,14 @@ export default function Geno32Landing() {
             <p className="mt-2 text-sm text-slate-600">{site.address}</p>
           </div>
           <div className="flex flex-col gap-4">
-            <a
+            <button
               className="btn-primary"
-              href={buildWhatsAppLink(site.whatsappDefaultMessage)}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => handleWhatsAppClick('footer')}
+              type="button"
+              onClick={() => handleWhatsAppClick('footer', site.whatsappDefaultMessage)}
             >
               <WhatsAppIcon className="h-4 w-4" />
               {site.ctaWhatsAppLabel}
-            </a>
+            </button>
             <div className="flex gap-4 text-sm text-slate-600">
               <a
                 className="inline-flex items-center gap-2 transition hover:text-petrol"
@@ -489,16 +507,80 @@ export default function Geno32Landing() {
         </div>
       </footer>
 
-      <a
-        href={buildWhatsAppLink(site.whatsappDefaultMessage)}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() => handleWhatsAppClick('floating')}
+      <button
+        type="button"
+        onClick={() => handleWhatsAppClick('floating', site.whatsappDefaultMessage)}
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-mint-dark text-white shadow-soft transition hover:scale-105"
         aria-label="Escribinos por WhatsApp"
       >
         <WhatsAppIcon className="h-7 w-7" />
-      </a>
+      </button>
+
+      {/* Modal para WhatsApp */}
+      {showWhatsAppModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+          <div className="w-full max-w-md rounded-3xl bg-white p-6 shadow-soft">
+            <h3 className="text-lg font-semibold text-petrol">Completá tus datos</h3>
+            <p className="mt-2 text-sm text-slate-600">
+              Necesitamos algunos datos para armar tu mensaje de WhatsApp.
+            </p>
+            <form onSubmit={handleWhatsAppModalSubmit} className="mt-6 space-y-4">
+              <label className="text-sm font-semibold text-petrol">
+                Nombre y apellido
+                <input
+                  className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
+                  type="text"
+                  value={whatsAppModalData.name}
+                  onChange={(e) =>
+                    setWhatsAppModalData((prev) => ({ ...prev, name: e.target.value }))
+                  }
+                  required
+                />
+              </label>
+              <label className="text-sm font-semibold text-petrol">
+                Teléfono
+                <input
+                  className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
+                  type="tel"
+                  value={whatsAppModalData.phone}
+                  onChange={(e) =>
+                    setWhatsAppModalData((prev) => ({ ...prev, phone: e.target.value }))
+                  }
+                  required
+                />
+              </label>
+              <label className="text-sm font-semibold text-petrol">
+                Barrio / zona
+                <input
+                  className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
+                  type="text"
+                  value={whatsAppModalData.area}
+                  onChange={(e) =>
+                    setWhatsAppModalData((prev) => ({ ...prev, area: e.target.value }))
+                  }
+                  required
+                />
+              </label>
+              <div className="flex gap-3">
+                <button
+                  type="button"
+                  className="btn-secondary flex-1"
+                  onClick={() => {
+                    setShowWhatsAppModal(false)
+                    setWhatsAppModalData({ name: '', phone: '', area: '' })
+                  }}
+                >
+                  Cancelar
+                </button>
+                <button type="submit" className="btn-primary flex-1">
+                  <WhatsAppIcon className="h-4 w-4" />
+                  Abrir WhatsApp
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

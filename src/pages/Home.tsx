@@ -96,8 +96,9 @@ function App() {
 
   const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const reason = formData.reason || selectedService || 'consulta general'
-    const message = `Hola, soy ${formData.name}. Quiero consultar por ${reason}. Mi barrio es ${formData.area}. Mi teléfono es ${formData.phone}.`
+    const serviceReason = selectedService || 'consulta general'
+    const additionalMessage = formData.reason ? ` ${formData.reason}` : ''
+    const message = `Hola, soy ${formData.name}. Quiero consultar por ${serviceReason}.${additionalMessage} Mi barrio es ${formData.area}. Mi teléfono es ${formData.phone}.`
     trackEvent('whatsapp_click', 'contacto_formulario')
     window.open(buildWhatsAppLink(message), '_blank', 'noopener,noreferrer')
   }
@@ -243,14 +244,14 @@ function App() {
                         className="h-full w-auto object-contain"
                       />
                     ) : (
-                      <OptimizedImage
-                        src={service.image}
-                        alt={service.title}
-                        className="h-full w-full"
-                        width={400}
-                        height={240}
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
+                    <OptimizedImage
+                      src={service.image}
+                      alt={service.title}
+                      className="h-full w-full"
+                      width={400}
+                      height={240}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                     )}
                   </div>
                   <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
@@ -278,17 +279,17 @@ function App() {
                     ) : (
                       <a
                         className="btn-secondary self-start"
-                        href={buildWhatsAppLink(service.ctaMessage)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => handleServiceClick(service)}
-                      >
-                        <WhatsAppIcon className="h-4 w-4" />
-                        {service.ctaLabel}
-                      </a>
+                    href={buildWhatsAppLink(service.ctaMessage)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => handleServiceClick(service)}
+                  >
+                    <WhatsAppIcon className="h-4 w-4" />
+                    {service.ctaLabel}
+        </a>
                     )}
                   </div>
-                </div>
+      </div>
               ))}
           </div>
         </section>
@@ -630,14 +631,37 @@ function App() {
                   </label>
                   <label className="text-sm font-semibold text-petrol">
                     Motivo de consulta
+                    <select
+                      className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800"
+                      name="service"
+                      value={selectedService}
+                      onChange={(event) => {
+                        setSelectedService(event.target.value)
+                        setFormData((prev) => ({ ...prev, reason: event.target.value }))
+                      }}
+                      required
+                    >
+                      <option value="">Seleccioná un servicio</option>
+                      {(services as Service[])
+                        .filter((service) => service.isActive)
+                        .sort((a, b) => a.order - b.order)
+                        .map((service) => (
+                          <option key={service.id} value={service.title}>
+                            {service.title}
+                          </option>
+                        ))}
+                    </select>
+                  </label>
+                  <label className="text-sm font-semibold text-petrol">
+                    Mensaje adicional (opcional)
                     <textarea
-                      className="mt-2 min-h-[120px] w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
+                      className="mt-2 min-h-[100px] w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
                       name="reason"
-                      value={formData.reason || selectedService}
+                      value={formData.reason}
                       onChange={(event) =>
                         setFormData((prev) => ({ ...prev, reason: event.target.value }))
                       }
-                      required
+                      placeholder="Contanos más detalles sobre tu consulta..."
                     />
                   </label>
                 </div>
