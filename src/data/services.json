@@ -74,7 +74,7 @@
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Odontología general. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
     "order": 7,
-    "image": "/img/stock/service-general.jpg"
+    "image": "/img/stock/image.png"
   },
   {
     "id": "pediatria",
