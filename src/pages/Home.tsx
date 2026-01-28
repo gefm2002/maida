@@ -233,15 +233,25 @@ function App() {
               .sort((a, b) => a.order - b.order)
               .map((service) => (
                 <div key={service.id} className="card flex h-full flex-col">
-                  <div className="h-60 w-full overflow-hidden rounded-2xl">
-                    <OptimizedImage
-                      src={service.image}
-                      alt={service.title}
-                      className="h-full w-full"
-                      width={400}
-                      height={240}
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
+                  <div className={`h-60 w-full overflow-hidden rounded-2xl flex items-center justify-center ${
+                    service.id === 'geno32' ? 'bg-light-gray p-8' : ''
+                  }`}>
+                    {service.id === 'geno32' ? (
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="h-full w-auto object-contain"
+                      />
+                    ) : (
+                      <OptimizedImage
+                        src={service.image}
+                        alt={service.title}
+                        className="h-full w-full"
+                        width={400}
+                        height={240}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                    )}
                   </div>
                   <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
                   <p className="mt-3 text-sm text-slate-600">{service.description}</p>
