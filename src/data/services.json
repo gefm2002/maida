@@ -1,5 +1,17 @@
 [
   {
+    "id": "geno32",
+    "slug": "geno32",
+    "title": "GENO32 - Dispositivo para mejorar la respiración durante el sueño",
+    "description": "Dispositivo odontológico personalizado que mejora la calidad del sueño mediante adelantamiento mandibular controlado, reduciendo ronquidos y apneas leves a moderadas.",
+    "ctaLabel": "Más información",
+    "ctaMessage": "Hola, quiero más información sobre GENO32.",
+    "isActive": true,
+    "order": 1,
+    "image": "/img/geno32/geno32.png",
+    "landingUrl": "/geno32"
+  },
+  {
     "id": "ortodoncia",
     "slug": "ortodoncia-convencional",
     "title": "Ortodoncia convencional",
@@ -7,7 +19,7 @@
     "ctaLabel": "Consultar por ortodoncia",
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Ortodoncia convencional. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
-    "order": 1,
+    "order": 2,
     "image": "/img/stock/Ortodoncia.png"
   },
   {
@@ -18,7 +30,7 @@
     "ctaLabel": "Consultar por limpieza",
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Limpieza dental profesional. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
-    "order": 2,
+    "order": 3,
     "image": "/img/stock/limpieza.png"
   },
   {
@@ -29,7 +41,7 @@
     "ctaLabel": "Consultar por bruxismo",
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Bruxismo y placas de descanso. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
-    "order": 3,
+    "order": 4,
     "image": "/img/stock/bruxismo.png"
   },
   {
@@ -40,7 +52,7 @@
     "ctaLabel": "Consultar por conducto",
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Tratamientos de conducto (Endodoncia). Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
-    "order": 4,
+    "order": 5,
     "image": "/img/stock/endodoncia.png"
   },
   {
@@ -51,7 +63,7 @@
     "ctaLabel": "Consultar por implantes",
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Implantes. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
-    "order": 5,
+    "order": 6,
     "image": "/img/stock/implante.png"
   },
   {
@@ -62,7 +74,7 @@
     "ctaLabel": "Consultar por prótesis",
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Prótesis fija y removible. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
-    "order": 6,
+    "order": 7,
     "image": "/img/stock/protesis.png"
   },
   {
@@ -73,7 +85,7 @@
     "ctaLabel": "Agendar control",
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Odontología general. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
-    "order": 7,
+    "order": 8,
     "image": "/img/stock/image.png"
   },
   {
@@ -84,7 +96,7 @@
     "ctaLabel": "Consultar por atención infantil",
     "ctaMessage": "Hola, soy {nombre}. Quiero consultar por Atención a niños y adolescentes. Mi barrio es {barrio}. Mi teléfono es {telefono}.",
     "isActive": true,
-    "order": 8,
+    "order": 9,
     "image": "/img/stock/Atencionninosadolescentes.png"
   }
 ]

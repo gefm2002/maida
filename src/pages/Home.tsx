@@ -1,4 +1,5 @@
 import { type FormEvent, useState } from 'react'
+import { Link } from 'react-router-dom'
 import site from '../data/site.json'
 import services from '../data/services.json'
 import gallery from '../data/gallery.json'
@@ -23,6 +24,7 @@ type Service = {
   isActive: boolean
   order: number
   image: string
+  landingUrl?: string
 }
 
 type IconProps = {
@@ -243,17 +245,26 @@ function App() {
                   </div>
                   <h3 className="mt-4 text-lg font-semibold text-petrol">{service.title}</h3>
                   <p className="mt-3 text-sm text-slate-600">{service.description}</p>
-                  <a
-                    className="btn-secondary mt-8 self-start lg:mt-auto"
-                    href={buildWhatsAppLink(service.ctaMessage)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => handleServiceClick(service)}
-                  >
-                    <WhatsAppIcon className="h-4 w-4" />
-                    {service.ctaLabel}
-        </a>
-      </div>
+                  {service.id === 'geno32' && service.landingUrl ? (
+                    <Link
+                      to={service.landingUrl}
+                      className="btn-secondary mt-8 self-start lg:mt-auto"
+                    >
+                      {service.ctaLabel}
+                    </Link>
+                  ) : (
+                    <a
+                      className="btn-secondary mt-8 self-start lg:mt-auto"
+                      href={buildWhatsAppLink(service.ctaMessage)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => handleServiceClick(service)}
+                    >
+                      <WhatsAppIcon className="h-4 w-4" />
+                      {service.ctaLabel}
+                    </a>
+                  )}
+                </div>
               ))}
           </div>
         </section>
