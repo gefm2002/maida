@@ -61,8 +61,17 @@ export default function OptimizedImage({
   // Usar imágenes optimizadas si están disponibles (no están en la ruta original)
   const useOptimized = !src.includes('/optimized/')
 
+  // Determinar si las clases incluyen h-auto (para imágenes que deben mostrarse completas)
+  const hasAutoHeight = className.includes('h-auto')
+  const containerClasses = hasAutoHeight 
+    ? `relative ${className}` 
+    : `relative overflow-hidden ${className}`
+  const imageClasses = hasAutoHeight
+    ? `${className} transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`
+    : `h-full w-full object-cover transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`
+
   return (
-    <div className={`relative overflow-hidden ${className}`} style={{ width, height }}>
+    <div className={containerClasses} style={!hasAutoHeight ? { width, height } : undefined}>
       {/* Skeleton loader simple mientras carga */}
       {!isLoaded && !hasError && (
         <div className="absolute inset-0 bg-gradient-to-br from-light-gray via-mint-light/30 to-light-gray animate-pulse" />
@@ -100,9 +109,7 @@ export default function OptimizedImage({
             `}
             sizes={sizes}
             alt={alt}
-            className={`h-full w-full object-cover transition-opacity duration-500 ${
-              isLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={imageClasses}
             width={width}
             height={height}
             loading={priority ? 'eager' : 'lazy'}
@@ -116,9 +123,7 @@ export default function OptimizedImage({
         <img
           src={paths.original}
           alt={alt}
-          className={`h-full w-full object-cover transition-opacity duration-500 ${
-            isLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={imageClasses}
           width={width}
           height={height}
           loading={priority ? 'eager' : 'lazy'}
@@ -134,7 +139,7 @@ export default function OptimizedImage({
         <img
           src={paths.original}
           alt={alt}
-          className="h-full w-full object-cover opacity-100"
+          className={hasAutoHeight ? className : "h-full w-full object-cover opacity-100"}
           width={width}
           height={height}
           loading={priority ? 'eager' : 'lazy'}

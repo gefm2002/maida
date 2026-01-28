@@ -306,12 +306,20 @@ function App() {
                     {isOpen ? (
                       <div className="border-t border-slate-100 px-6 pb-6 pt-5">
                         <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
-                          <div className="relative overflow-hidden rounded-2xl bg-light-gray">
+                          <div className={`relative overflow-hidden rounded-2xl bg-light-gray ${
+                            cluster.id === 'Antes y después' 
+                              ? 'min-h-[500px] md:min-h-[600px]' 
+                              : ''
+                          }`}>
                             {activeItem ? (
                               <OptimizedImage
                                 src={activeItem.imageUrl}
                                 alt={activeItem.title}
-                                className="h-full w-full object-contain"
+                                className={`w-full ${
+                                  cluster.id === 'Antes y después' 
+                                    ? 'h-auto object-contain' 
+                                    : 'h-full object-contain'
+                                }`}
                                 width={800}
                                 height={600}
                                 priority
