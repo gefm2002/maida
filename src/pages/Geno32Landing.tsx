@@ -236,7 +236,6 @@ export default function Geno32Landing() {
                 className="h-full w-full"
                 controls
                 autoPlay
-                muted
                 loop
                 preload="auto"
                 poster="/img/video/geno32-poster.jpg"
