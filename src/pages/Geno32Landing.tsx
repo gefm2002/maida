@@ -58,7 +58,7 @@ export default function Geno32Landing() {
   const [whatsAppModalData, setWhatsAppModalData] = useState({
     name: '',
     phone: '',
-    area: '',
+    email: '',
   })
 
   // Agregar meta noindex
@@ -92,7 +92,7 @@ export default function Geno32Landing() {
     if (message && message.includes('{nombre}')) {
       // Si el mensaje tiene variables, mostrar modal
       setShowWhatsAppModal(true)
-      setWhatsAppModalData({ name: '', phone: '', area: '' })
+      setWhatsAppModalData({ name: '', phone: '', email: '' })
     } else {
       // Si no tiene variables, abrir directamente
       window.open(buildWhatsAppLink(message || site.whatsappDefaultMessage), '_blank', 'noopener,noreferrer')
@@ -101,14 +101,20 @@ export default function Geno32Landing() {
 
   const handleWhatsAppModalSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const message = site.whatsappDefaultMessage
-      .replace('{nombre}', whatsAppModalData.name)
-      .replace('{barrio}', whatsAppModalData.area)
-      .replace('{telefono}', whatsAppModalData.phone)
+    let message = 'Hola, quiero más información sobre GENO32.'
+    if (whatsAppModalData.name) {
+      message += ` Mi nombre es ${whatsAppModalData.name}.`
+    }
+    if (whatsAppModalData.phone) {
+      message += ` Mi teléfono es ${whatsAppModalData.phone}.`
+    }
+    if (whatsAppModalData.email) {
+      message += ` Mi email es ${whatsAppModalData.email}.`
+    }
     trackEvent('whatsapp_click', 'geno32_modal')
     window.open(buildWhatsAppLink(message), '_blank', 'noopener,noreferrer')
     setShowWhatsAppModal(false)
-    setWhatsAppModalData({ name: '', phone: '', area: '' })
+    setWhatsAppModalData({ name: '', phone: '', email: '' })
   }
 
   return (
@@ -550,15 +556,15 @@ export default function Geno32Landing() {
                 />
               </label>
               <label className="text-sm font-semibold text-petrol">
-                Barrio / zona
+                Email (opcional)
                 <input
                   className="mt-2 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder-slate-400"
-                  type="text"
-                  value={whatsAppModalData.area}
+                  type="email"
+                  value={whatsAppModalData.email}
                   onChange={(e) =>
-                    setWhatsAppModalData((prev) => ({ ...prev, area: e.target.value }))
+                    setWhatsAppModalData((prev) => ({ ...prev, email: e.target.value }))
                   }
-                  required
+                  placeholder="tu@email.com"
                 />
               </label>
               <div className="flex gap-3">
@@ -567,7 +573,7 @@ export default function Geno32Landing() {
                   className="btn-secondary flex-1"
                   onClick={() => {
                     setShowWhatsAppModal(false)
-                    setWhatsAppModalData({ name: '', phone: '', area: '' })
+                    setWhatsAppModalData({ name: '', phone: '', email: '' })
                   }}
                 >
                   Cancelar
