@@ -171,7 +171,7 @@ export default function Geno32Landing() {
           <button
             className="btn-primary"
             type="button"
-            onClick={() => handleWhatsAppClick('header', site.whatsappDefaultMessage)}
+            onClick={() => handleWhatsAppClick('header', 'Hola, quiero consultar.')}
           >
             <WhatsAppIcon className="h-4 w-4" />
             {site.ctaWhatsAppLabel}
@@ -550,7 +550,7 @@ export default function Geno32Landing() {
 
       <button
         type="button"
-        onClick={() => handleWhatsAppClick('floating', site.whatsappDefaultMessage)}
+        onClick={() => handleWhatsAppClick('floating', 'Hola, quiero consultar.')}
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-mint-dark text-white shadow-soft transition hover:scale-105"
         aria-label="Escribinos por WhatsApp"
       >

@@ -152,7 +152,7 @@ function App() {
           </nav>
           <a
             className="btn-primary"
-            href={buildWhatsAppLink(site.whatsappDefaultMessage)}
+            href={buildWhatsAppLink('Hola, quiero consultar.')}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => handleWhatsAppClick('header')}
@@ -806,7 +806,7 @@ function App() {
       </footer>
 
       <a
-        href={buildWhatsAppLink(site.whatsappDefaultMessage)}
+        href={buildWhatsAppLink('Hola, quiero consultar.')}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => handleWhatsAppClick('floating')}
